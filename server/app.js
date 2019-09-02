@@ -12,6 +12,11 @@ app.get('/api/products', (req, res) => {
   res.sendFile(path.join(__dirname, 'data', 'products.json'));
 });
 
+app.get('/', (req, res) => {
+  console.log('YOOOOO');
+});
+
 app.listen(port, () => {
   console.log(`[products] API listening on port ${port}.`);
+  console.log()
 });
