@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Home from '../Shelf';
+import Home from '../Home';
 import FloatCart from '../FloatCart';
 
 const App = () => (
