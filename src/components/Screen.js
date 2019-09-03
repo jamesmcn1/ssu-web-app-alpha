@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import './styles/Screen.scss';
+
 import Header from './Header';
 
 export class Screen extends Component {
   render() {
     return (
-      <div>
+      <div className="screen">
         <Header />
         {this.props.children}
       </div>
