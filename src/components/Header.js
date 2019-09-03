@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 
+import Home from "../containers/Home/index";
+import People from "../containers/People/index";
 
 import './styles/Header.scss';
 import logo from '../assets/images/logo.png'
@@ -9,18 +12,20 @@ export class Header extends Component {
     return (
       <div className="header-container">
         <div className="header-div">
-          <a href="../containers/Home/index">
+          <Link exact className="link" to="/">
             <img src={logo} />
-          </a>
-          <a href="../containers/Projects/index">
+          </Link>
+          <Link exact className="link" to="/projects">
             Projects
-          </a>
-          <a href="../containers/Events/index">
+          </Link>
+          <Link className="link" to="/events">
             Events
-          </a>
-          <a href="../containers/People/index">
+          </Link>
+          <Link className="link" to="/people">
             People
-          </a>
+          </Link>
+
+          <Route exact path="/people" component={People} />
         </div>
       </div>
     );
