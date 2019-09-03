@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $black;
 }
 
 body {
@@ -19,9 +20,9 @@ body {
 
 main {
   display: flex;
-  padding: 20px 2%;
-  max-width: 1200px;
-  margin: 50px auto 0 auto;
+  // padding: 20px 2%;
+  // max-width: 1200px;
+  // margin: 50px auto 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {

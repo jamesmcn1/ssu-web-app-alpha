@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
+import ImagePartial from '../../components/ImagePartial';
 
 export class Home extends Component {
   render() {
     return (
       <Screen>
-        <h1>Yo</h1>
+        <ImagePartial>
+
+        </ImagePartial>
       </Screen>
     );
   }
