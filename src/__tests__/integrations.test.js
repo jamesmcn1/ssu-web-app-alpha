@@ -1,10 +1,10 @@
 import moxios from 'moxios';
 
 import Root from '../Root';
-import App from '../components/App';
-import ShelfHeader from '../components/Shelf/ShelfHeader';
-import Product from '../components/Shelf/ProductList/Product';
-import CartProduct from '../components/FloatCart/CartProduct';
+import App from '../containers/App';
+import ShelfHeader from '../containers/Shelf/ShelfHeader';
+import Product from '../containers/Shelf/ProductList/Product';
+import CartProduct from '../containers/FloatCart/CartProduct';
 
 import { productsAPI } from '../services/util';
 

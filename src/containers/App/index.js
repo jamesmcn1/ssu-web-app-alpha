@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Shelf from '../Shelf';
-import Filter from '../Shelf/Filter';
+import Home from '../Shelf';
 import FloatCart from '../FloatCart';
 
 const App = () => (
   <React.Fragment>
     <main>
-      <Filter />
-      <Shelf />
+      <Home />
     </main>
     <FloatCart />
   </React.Fragment>

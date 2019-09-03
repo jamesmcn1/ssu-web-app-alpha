@@ -1,0 +1,46 @@
+/* colours */
+$white: #ffffff;
+$offwhite: #f9fbfb;
+$brown: #3a342c;
+$darkbrown: #343028; // nav menu leading
+$yellow: #fac924;
+$darkyellow: #efbb0a; // button hover
+$yellowdark: #f4b500;
+$turquoise: #24b6b6; // links, balance, new button for cta banner
+$darkturquoise: #199999; // hover
+$progressblue: #008aca; // contributions
+$peach: #ef5d4e;
+$lightpink: #fdf5f6; // for ineligible list
+$midpink: #fdebee; // for ineligible list
+$pink: #ec3d55;
+$darkpink: #c62f44;
+$lightestgrey: #f3f6f6;  // background
+$lightergrey: #eff2f4; // backgrounds and speech balloons
+$lightishgrey: #e2e8ec; // awkward name is awkward...
+$lightgrey: #dce0e1; // borders
+$slate: #526173;
+$midgrey: #b0bdbf; // used for big grey text and graphics
+$darkgrey: #909c9e; // used mostly for text and as background for a few buttons
+$darkestgrey: #788183; // not in new style guide but used on some button hovers
+$black: #000000;
+$beige: #f9fafb;
+$grey6: #f4f6f8;
+$grey8: #f8fafb;
+$grey9: #fbfcfd;
+
+// extra colours for pension pie
+$darkblue: #005485;
+$lightgreen: #53b627;
+$darkgreen: #25781c;
+$lightpurple: #9343bc;
+$darkpurple: #520b76;
+$darkestturquoise: #007b80;
+$lightblue: #f1fafd;
+$orange: #f27b2f;
+
+
+/* other variables */
+$transitiontime: 350ms;
+$fadeOutDuration: 500ms;
+$fadeOutDelay: 5s;
+$hideDelay: $fadeOutDuration + $fadeOutDelay;
