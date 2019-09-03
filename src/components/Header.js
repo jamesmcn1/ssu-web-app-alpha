@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import './styles/Header.scss';
 import logo from '../assets/images/logo.png'
 
@@ -8,14 +9,16 @@ export class Header extends Component {
     return (
       <div className="header-container">
         <div className="header-div">
-          <img src={logo} />
-          <a>
+          <a href="../containers/Home/index">
+            <img src={logo} />
+          </a>
+          <a href="../containers/Projects/index">
             Projects
           </a>
-          <a>
+          <a href="../containers/Events/index">
             Events
           </a>
-          <a>
+          <a href="../containers/People/index">
             People
           </a>
         </div>
