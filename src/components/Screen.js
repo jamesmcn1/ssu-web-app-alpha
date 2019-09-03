@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './styles/Screen.scss';
 
 import Header from './Header';
+import Footer from './Footer';
 
 export class Screen extends Component {
   render() {
@@ -10,6 +11,7 @@ export class Screen extends Component {
       <div className="screen">
         <Header />
         {this.props.children}
+        <Footer />
       </div>
     );
   }

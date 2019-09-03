@@ -9,9 +9,15 @@ export class Header extends Component {
       <div className="header-container">
         <div className="header-div">
           <img src={logo} />
-          <h2>
+          <a>
+            Projects
+          </a>
+          <a>
+            Events
+          </a>
+          <a>
             People
-          </h2>
+          </a>
         </div>
       </div>
     );
