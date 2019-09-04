@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
+import EventCard from './EventCard';
 // import ImagePartial from '../../components/ImagePartial';
+
+import './styles/EventCard.scss';
 
 export class Events extends Component {
   render() {
@@ -10,6 +13,14 @@ export class Events extends Component {
       <Screen>
         <Container>
           <h1>Events</h1>
+          <EventCard
+            name=""
+            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
+          />
+          <EventCard
+            name=""
+            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
+          />
         </Container>
       </Screen>
     );
