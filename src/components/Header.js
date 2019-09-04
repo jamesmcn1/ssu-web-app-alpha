@@ -12,10 +12,10 @@ export class Header extends Component {
     return (
       <div className="header-container">
         <div className="header-div">
-          <Link exact className="link" to="/">
+          <Link className="link" to="/">
             <img src={logo} />
           </Link>
-          <Link exact className="link" to="/projects">
+          <Link className="link" to="/projects">
             Projects
           </Link>
           <Link className="link" to="/events">
@@ -24,8 +24,6 @@ export class Header extends Component {
           <Link className="link" to="/people">
             People
           </Link>
-
-          <Route exact path="/people" component={People} />
         </div>
       </div>
     );
