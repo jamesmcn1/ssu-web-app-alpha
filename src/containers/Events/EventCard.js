@@ -5,7 +5,12 @@ import React, { Component } from 'react';
 export class EventCard extends Component {
   render() {
     return (
-      <img src={this.props.src} className="img"/>
+      <div className="event-card-container">
+        <img src={this.props.src} className="img"/>
+        <div class="info">
+          Hello
+        </div>
+      </div>
     );
   }
 }
