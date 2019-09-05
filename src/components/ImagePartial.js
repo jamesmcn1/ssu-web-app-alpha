@@ -7,7 +7,7 @@ export class ImagePartial extends Component {
     super(props);
 
     this.state = {
-      backgroundImage: 'url(https://res.cloudinary.com/nineteesvintage/image/upload/v1567537991/Sunny%20Side%20Up/american-public-power-association-419672-unsplash.jpg)',
+      backgroundImage: this.props.src ? `url(${this.props.src})` : '',
     };
   }
   render() {
