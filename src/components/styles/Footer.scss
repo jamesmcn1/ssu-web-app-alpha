@@ -1,21 +1,23 @@
 
 .footer-container {
+  border-top: 1px solid $orange;
   width: 100%;
-  // margin: 0 auto;
-  // position: absolute;
-  // background-color: transparent;
-  // display: flex;
-  // align-items: center;
+  padding-top: 50px;
   .footer-div {
-    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 100%;
     max-width: 1180px;
     margin: 0 auto;
-  //   display: flex;
-  //   flex-direction: row;§
-  //
+    text-align: center;
     img {
       height: 80px;
       width: 80px;
+    }
+    .link {
+      padding: 20px 0;
     }
   }
 }

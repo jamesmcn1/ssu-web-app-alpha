@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Home from "../containers/Home/index";
 import People from "../containers/People/index";
