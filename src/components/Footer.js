@@ -30,14 +30,14 @@ export class Footer extends Component {
             People
           </Link>
           <hr />
-          <p>
+          <p className="enquiries">
             General Enquiries: <span>info@sunnysideupglobal.org</span>
           </p>
           <p>
             © Sunny Side Up! 2019
           </p>
           <p>
-            Website by James McNamara
+            <span>Website</span> by James McNamara
           </p>
         </div>
       </div>
