@@ -28,7 +28,7 @@ export class Projects extends Component {
             </h3>
           </div>
 
-          <div>
+          <div className="img-text-container">
             <p>
               The irrationality of human consumption has resulted in climate change
               becoming increasingly noticeable thus the dire need to switch to more
@@ -44,7 +44,7 @@ export class Projects extends Component {
             />
           </div>
 
-          <div>
+          <div className="img-text-container">
             <img
               className="img-bubble"
               src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714703/Sunny%20Side%20Up/Project%20Images/20180701_134220.jpg"

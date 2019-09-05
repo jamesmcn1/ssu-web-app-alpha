@@ -96,11 +96,11 @@ main {
 @media only screen and (max-width: 460px) {
   body {
     main {
-      overflow: hidden;
+      // overflow: hidden;
       display: flex;
       flex-wrap: wrap;
       // padding: 2%;
-      margin-top: 42px;
+      // margin-top: 42px;
     }
 
     .filters {

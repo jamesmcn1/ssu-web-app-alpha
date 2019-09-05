@@ -1,3 +1,11 @@
-.img-bubble {
-  max-height: 620px;
+
+.img-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .img-bubble {
+    height: 620px;
+    max-width: 620px;
+    border-radius: 50%;
+  }
 }
