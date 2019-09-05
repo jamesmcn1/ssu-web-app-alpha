@@ -12,7 +12,8 @@ export class ImagePartial extends Component {
   }
   render() {
     return (
-      <div className="image-partial" style={this.state}>
+      <div className="image-partial">
+        <div className="background-img" style={this.state}></div>
         {this.props.children}
       </div>
     );
