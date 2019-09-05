@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import './styles/Footer.scss';
 import logo from '../assets/images/logo.png'
 
-export class Header extends Component {
+export class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
@@ -11,11 +10,11 @@ export class Header extends Component {
           <img src={logo} />
           <h2>
             Sunny Side Up
-          </h2>        
+          </h2>
         </div>
       </div>
     );
   }
 }
 
-export default Header;
+export default Footer;

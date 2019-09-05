@@ -1,0 +1,272 @@
+/*
+* Extract from:
+*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/* Modified by Jonathan Lister Parsons for PensionBee */
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$column-width: 60px;
+$gutter-width: 40px;
+$grid-width: 12*$column-width + 11*$gutter-width; // 1160px
+$small: 436px;
+$medium: 767px;
+$large: 1024px;
+
+/* First, mobile styles */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $grid-width;
+  &.wide-on-tablet {
+    @media (max-width: $large - 1) {
+      max-width: none;
+    }
+  }
+  margin: 0px auto;
+  padding: 0 10px; // NB: some padding on mobile
+  &.no-mobile-padding {
+    padding: 0;
+  }
+  box-sizing: border-box;
+}
+.new-container { // overrides for proposed new container defaults
+  @extend .container;
+  padding: 0 20px; // new suggestion is 20px
+}
+.column,
+.columns {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.tablet-only {
+  display: none;
+}
+
+/* For devices smaller than large */
+@media (max-width: $large - 1px) {
+  .large-only {
+    display: none !important;
+  }
+}
+
+/* For devices at least 767px wide */
+@media (min-width: $medium) {
+  .container {
+    max-width: $medium;
+  }
+  .tablet-only {
+    display: block;
+  }
+}
+
+/* For devices at least 1024px wide */
+@media (min-width: $large) {
+  .not-large {
+    display: none !important;
+  }
+  .tablet-only {
+    display: none;
+  }
+}
+
+/* Reset mobile padding for devices in between the breakpoint of tablets */
+@media (min-width: $medium + 40) and (max-width: $large - 1) {
+  .new-container {
+    padding: 0;
+  }
+}
+
+/* Reset mobile padding for devices at least 1180px wide, to allow for smooth transition */
+@media (min-width: $grid-width + 20) {
+  .container {
+    padding: 0;
+  }
+}
+
+/* For devices at least 1024px wide */
+@media (min-width: $large) {
+  .container {
+    width: 100%;
+    max-width: $grid-width;
+  }
+  .column,
+  .columns {
+    margin-left: percentage($gutter-width / $grid-width); }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: percentage($column-width / $grid-width); }
+  .two.columns                    { width: percentage((2*$column-width + 1*$gutter-width) / $grid-width); }
+  .three.columns                  { width: percentage((3*$column-width + 2*$gutter-width) / $grid-width); }
+  .four.columns                   { width: percentage((4*$column-width + 3*$gutter-width) / $grid-width); }
+  .five.columns                   { width: percentage((5*$column-width + 4*$gutter-width) / $grid-width); }
+  .six.columns                    { width: percentage((6*$column-width + 5*$gutter-width) / $grid-width); }
+  .seven.columns                  { width: percentage((7*$column-width + 6*$gutter-width) / $grid-width); }
+  .eight.columns                  { width: percentage((8*$column-width + 7*$gutter-width) / $grid-width); }
+  .nine.columns                   { width: percentage((9*$column-width + 8*$gutter-width) / $grid-width); }
+  .ten.columns                    { width: percentage((10*$column-width + 9*$gutter-width) / $grid-width); }
+  .eleven.columns                 { width: percentage((11*$column-width + 10*$gutter-width) / $grid-width); }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: percentage((4*$column-width + 3*$gutter-width) / $grid-width); }
+  .two-thirds.column              { width: percentage((8*$column-width + 7*$gutter-width) / $grid-width); }
+
+  .one-half.column                { width: percentage((6*$column-width + 5*$gutter-width) / $grid-width); }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: percentage((1*$column-width + 1*$gutter-width) / $grid-width); }
+  .offset-by-one-and-a-half.column,
+  .offset-by-one-and-a-half.columns { margin-left: percentage((1.5*$column-width + 1.5*$gutter-width) / $grid-width); }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: percentage((2*$column-width + 2*$gutter-width) / $grid-width); }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: percentage((3*$column-width + 3*$gutter-width) / $grid-width); }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: percentage((4*$column-width + 4*$gutter-width) / $grid-width); }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: percentage((5*$column-width + 5*$gutter-width) / $grid-width); }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: percentage((6*$column-width + 6*$gutter-width) / $grid-width); }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: percentage((7*$column-width + 7*$gutter-width) / $grid-width); }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: percentage((8*$column-width + 8*$gutter-width) / $grid-width); }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: percentage((9*$column-width + 9*$gutter-width) / $grid-width); }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: percentage((10*$column-width + 10*$gutter-width) / $grid-width); }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: percentage((11*$column-width + 11*$gutter-width) / $grid-width); }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: percentage((4*$column-width + 4*$gutter-width) / $grid-width); }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: percentage((8*$column-width + 8*$gutter-width) / $grid-width); }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: percentage((6*$column-width + 6*$gutter-width) / $grid-width); }
+
+  /* Offsets with additional gutter for when offset column is not the first one */
+  .offset-by-two.column.with-gutter,
+  .offset-by-two.columns.with-gutter { margin-left: percentage((2*$column-width + 3*$gutter-width) / $grid-width); }
+
+
+  /* Allow columns to swap */
+  .one-half.column.swap, .columns.swap {
+    float: right;
+    margin-left: 0;
+    &:first-child {
+      margin-left: percentage((3*$gutter-width + 2*$column-width) / $grid-width);
+    }
+  }
+
+  /* Some nested */
+  .four.columns {
+    $four-col-width: 4*$column-width + 3*$gutter-width;
+    .one-half.column {
+      width: percentage((2*$column-width + 1*$gutter-width) / $four-col-width);
+      margin-left: percentage($gutter-width / $four-col-width);
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .nine.columns {
+    $nine-col-width: 9*$column-width + 8*$gutter-width;
+    .one-third.column {
+      width: percentage((3*$column-width + 2*$gutter-width) / $nine-col-width);
+      margin-left: percentage($gutter-width / $nine-col-width);
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .ten.columns {
+    $ten-col-width: 10*$column-width + 9*$gutter-width;
+    .eight.columns {
+      $eight-col-width: 8*$column-width + 7*$gutter-width;
+      .one-half.column {
+        width: percentage((4*$column-width + 3*$gutter-width) / $eight-col-width);
+        margin-left: percentage($gutter-width / $eight-col-width);
+        &:first-of-type {
+          margin-left: 0;
+        }
+        .one-half.column {
+          $four-col-width: 4*$column-width + 3*$gutter-width;
+          width: percentage((2*$column-width + 1*$gutter-width) / $four-col-width);
+          margin-left: percentage($gutter-width / $four-col-width);
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  /* Some x of y style nesting */
+  .of.eight.columns {
+    $eight-col-width: 8*$column-width + 7*$gutter-width;
+    margin-left: percentage($gutter-width / $eight-col-width);
+    &.two {
+      width: percentage((2*$column-width + 1*$gutter-width) / $eight-col-width);
+    }
+    &.six {
+      width: percentage((6*$column-width + 5*$gutter-width) / $eight-col-width);
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  .of.nine.columns {
+    $nine-col-width: 9*$column-width + 8*$gutter-width;
+    margin-left: percentage($gutter-width / $nine-col-width);
+    &.two {
+      width: percentage((2*$column-width + $gutter-width) / $nine-col-width);
+    }
+    &.three {
+      width: percentage((3*$column-width + 2*$gutter-width) / $nine-col-width);
+    }
+    &.six {
+      width: percentage((6*$column-width + 5*$gutter-width) / $nine-col-width);
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  .of.ten.columns {
+    $ten-col-width: 10*$column-width + 9*$gutter-width;
+    margin-left: percentage($gutter-width / $ten-col-width);
+    &.two {
+      width: percentage((2*$column-width + 1*$gutter-width) / $ten-col-width);
+    }
+    &.three {
+      width: percentage((3*$column-width + 2*$gutter-width) / $ten-col-width);
+    }
+    &.seven {
+      width: percentage((7*$column-width + 6*$gutter-width) / $ten-col-width);
+    }
+    &.eight {
+      width: percentage((8*$column-width + 7*$gutter-width) / $ten-col-width);
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+}

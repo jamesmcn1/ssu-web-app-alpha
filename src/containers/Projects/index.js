@@ -4,7 +4,7 @@ import Screen from '../../components/Screen';
 import Container from '../../components/Container';
 import ImagePartial from '../../components/ImagePartial';
 
-import './styles/Projects.scss';
+// import '../styles/Projects.scss';
 
 export class Projects extends Component {
   render() {

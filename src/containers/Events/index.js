@@ -5,8 +5,6 @@ import Container from '../../components/Container';
 import EventCard from './EventCard';
 // import ImagePartial from '../../components/ImagePartial';
 
-import './styles/EventCard.scss';
-
 export class Events extends Component {
   render() {
     return (

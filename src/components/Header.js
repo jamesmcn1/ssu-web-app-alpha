@@ -4,7 +4,6 @@ import { Link, Route } from 'react-router-dom';
 import Home from "../containers/Home/index";
 import People from "../containers/People/index";
 
-import './styles/Header.scss';
 import logo from '../assets/images/logo.png'
 
 export class Header extends Component {

@@ -2,7 +2,16 @@
 @import '_normalize';
 
 @import '_typography';
+@import '_skeleton_grid';
 
-//
 
-@import '../../containers/Events/styles/EventCard.scss';
+// Components
+@import '../../components/styles/Container';
+@import '../../components/styles/Footer';
+@import '../../components/styles/Header';
+@import '../../components/styles/ImagePartial';
+@import '../../components/styles/Screen';
+
+// Containers
+@import '../../containers/Events/styles/EventCard';
+@import '../../containers/Projects/styles/Projects';

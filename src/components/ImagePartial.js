@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import './styles/ImagePartial.scss';
 
 export class ImagePartial extends Component {
   constructor(props) {
