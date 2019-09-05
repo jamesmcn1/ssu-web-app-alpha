@@ -8,6 +8,7 @@ export class ImagePartial extends Component {
 
     this.state = {
       backgroundImage: this.props.src ? `url(${this.props.src})` : '',
+      opacity: this.props.opacity || 1,
     };
   }
   render() {
