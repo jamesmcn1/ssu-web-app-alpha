@@ -11,3 +11,16 @@ hr {
   font-size: 25px;
   text-decoration: none;
 }
+
+
+.mobile-only {
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
+.not-mobile {
+  @media (max-width: $medium - 1) {
+    display: none;
+  }
+}
