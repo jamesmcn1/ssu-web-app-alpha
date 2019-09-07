@@ -75,10 +75,10 @@ main {
 
     .float-cart {
       width: 100%;
-      right: -100%;
+      left: -100%;
 
       &--open {
-        right: 0;
+        left: 0;
       }
 
       &__close-btn {
