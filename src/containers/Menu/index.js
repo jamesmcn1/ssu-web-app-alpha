@@ -16,6 +16,9 @@ export class Menu extends Component {
   openMenu = () => {
     this.setState({ isOpen: true });
   };
+  closeMenu = () => {
+    this.setState({ isOpen: false });
+  };
 
 
   render() {
@@ -31,7 +34,7 @@ export class Menu extends Component {
           <img src={logo} />
         </span>
         <div className="menu-div">
-          <div>
+          <div onClick={() => this.closeMenu()}>
             <img src={logo} />
           </div>
           <h2>
