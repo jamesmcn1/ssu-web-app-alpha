@@ -6,7 +6,7 @@ export class VideoContainer extends Component {
 
 
     return (
-      <div className="container video" style={{ paddingTop: 0, maxWidth: 'none' }}>
+      <div className="container video" style={{ padding: 0, maxWidth: 'none' }}>
         <ReactPlayer
           url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
           width='100%'
