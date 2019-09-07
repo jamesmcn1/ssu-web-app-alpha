@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
+import VideoContainer from '../../components/VideoContainer';
 import ImagePartial from '../../components/ImagePartial';
 
-// import '../styles/Projects.scss';
+import pakistanMap from "../../assets/images/pakistan-map.gif";
 
 export class Projects extends Component {
   render() {
@@ -55,8 +56,20 @@ export class Projects extends Component {
               Donate or attend our events to help us reach our goals.
             </p>
           </div>
-
         </Container>
+        <Container
+          textAlign="center"
+        >
+          <h1>Sunny Side Up! project locations in Pakistan</h1>
+          <img
+            src={pakistanMap}
+          />
+          <p>Click on each location for more info</p>
+          <p>More coming soon!</p>
+        </Container>
+        <VideoContainer
+          src=""
+        />
       </Screen>
     );
   }
