@@ -40,6 +40,10 @@
     color: $orange;
   }
   p.description {
+    min-height: 220px;
+    @media (min-width: $medium) {
+      min-height: 176px;
+    }
     @media (min-width: $large) {
       min-height: 132px;
     }
