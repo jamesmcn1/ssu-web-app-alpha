@@ -30,7 +30,7 @@ export class Projects extends Component {
           </h3>
 
           <div className="img-text-container">
-            <p>
+            <p className="left">
               The irrationality of human consumption has resulted in climate change
               becoming increasingly noticeable thus the dire need to switch to more
               sustainable methods of living. By scaling agriculture & cottage industries
@@ -50,7 +50,7 @@ export class Projects extends Component {
               className="img-bubble"
               src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714703/Sunny%20Side%20Up/Project%20Images/20180701_134220.jpg"
             />
-            <p>
+            <p className="right">
               Our future projects aim to provide grid-like structures to provide
               clean energy to a wider population i.e entire villages with minimal effort.
               Donate or attend our events to help us reach our goals.
