@@ -8,11 +8,18 @@
   }
 }
 
-.people-widget {
+.people-widget-content {
+  max-width: 445px;
   @media (min-width: $medium) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  p.description {
+    @media (min-width: $large) {
+      min-height: 130px;
+    }
   }
   .thumbnail-container {
     display: flex;
@@ -22,6 +29,9 @@
       width: 100px;
       height: 100px;
       margin-right: 15px;
+      &:hover {
+        cursor: pointer;
+      }
       img {
         width: 100%;
         height: 100%;

@@ -29,10 +29,10 @@ export class PeopleWidget extends Component {
       <Container
         flexDirection="row"
       >
-        <div class="people-widget">
+        <div class="people-widget-content">
           <p>{people[this.state.index].name}</p>
           <h3>{people[this.state.index].title}</h3>
-          <p>
+          <p className="description">
             {people[this.state.index].description}
           </p>
           <div className="thumbnail-container">
