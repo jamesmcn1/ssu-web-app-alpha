@@ -8,9 +8,15 @@ export class People extends Component {
   render() {
     return (
       <Screen>
-        <Container>
+        <Container
+          flexDirection="row"
+        >
           <h1>People</h1>
           <h3>Meet our team</h3>
+          <img
+            className="img-bubble"
+            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
+          />
         </Container>
         <Container>
           <p>Mahnoor Lyla Saifi</p>

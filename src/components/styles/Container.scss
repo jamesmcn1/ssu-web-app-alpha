@@ -4,4 +4,10 @@
   // height: 100%;
   padding-top: 150px;
   overflow: hidden;
+  &.flex-row {
+    @media (min-width: $medium) {
+      display: flex;
+      flex-direction: 'row';
+    }
+  }
 }
