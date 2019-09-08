@@ -30,7 +30,7 @@ export class PeopleWidget extends Component {
         flexDirection="row"
       >
         <div class="people-widget-content">
-          <p>{people[this.state.index].name}</p>
+          <h1>{people[this.state.index].name}</h1>
           <h3>{people[this.state.index].title}</h3>
           <p className="description">
             {people[this.state.index].description}
