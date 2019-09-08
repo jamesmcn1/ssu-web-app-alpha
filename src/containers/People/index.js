@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
+import ImagePartial from '../../components/ImagePartial';
 
 import PeopleWidget from './PeopleWidget';
 // import ImagePartial from '../../components/ImagePartial';
@@ -10,18 +11,17 @@ export class People extends Component {
   render() {
     return (
       <Screen>
-        <Container
-          flexDirection="row"
+        <ImagePartial
+          src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
+          opacity={0.42}
         >
-          <div>
-            <h1>People</h1>
-            <h3>Meet our team</h3>
-          </div>
-          <img
-            className="img-bubble"
-            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
-          />
-        </Container>
+          <Container>
+            <div>
+              <h1>People</h1>
+              <h3>Meet our team</h3>
+            </div>
+          </Container>
+        </ImagePartial>
         <PeopleWidget />
         <Container>
           <h3>Special Thanks</h3>
