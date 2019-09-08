@@ -11,22 +11,32 @@ export class People extends Component {
         <Container
           flexDirection="row"
         >
-          <h1>People</h1>
-          <h3>Meet our team</h3>
+          <div>
+            <h1>People</h1>
+            <h3>Meet our team</h3>
+          </div>
           <img
             className="img-bubble"
             src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
           />
         </Container>
-        <Container>
-          <p>Mahnoor Lyla Saifi</p>
-          <h3>Co Director</h3>
-          <p>
-            An entrepreneur and DJ, Mahnoor is an outgoing and ambitious asset to Sunny Side Up!
-            Obtaining a MAHons in International Relations & Management from the University of St Andrews,
-            she is a perfect fit for the sustainability and events management sector.
-            Currently residing in Toronto she looks after our club nights and fundraising operations.
-          </p>
+        <Container
+          flexDirection="row"
+        >
+          <div>
+            <p>Mahnoor Lyla Saifi</p>
+            <h3>Co Director</h3>
+            <p>
+              An entrepreneur and DJ, Mahnoor is an outgoing and ambitious asset to Sunny Side Up!
+              Obtaining a MAHons in International Relations & Management from the University of St Andrews,
+              she is a perfect fit for the sustainability and events management sector.
+              Currently residing in Toronto she looks after our club nights and fundraising operations.
+            </p>
+          </div>
+          <img
+            className="img-bubble"
+            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
+          />
         </Container>
         <Container>
           <h3>Special Thanks</h3>
