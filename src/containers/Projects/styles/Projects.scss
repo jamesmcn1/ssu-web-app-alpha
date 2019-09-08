@@ -32,3 +32,18 @@ h3 {
     background-repeat:no-repeat;
   }
 }
+
+.map-container {
+  h1.map {
+    margin-bottom: 100px;
+    color: $orange;
+  }
+  img {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .more-coming {
+    margin-bottom: 120px;
+  }
+}

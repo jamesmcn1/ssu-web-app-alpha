@@ -60,12 +60,14 @@ export class Projects extends Component {
         <Container
           textAlign="center"
         >
-          <h1>Sunny Side Up! project locations in Pakistan</h1>
-          <img
-            src={pakistanMap}
-          />
-          <p>Click on each location for more info</p>
-          <p>More coming soon!</p>
+          <div className="map-container">
+            <h1 class="map">Sunny Side Up! project locations in Pakistan</h1>
+            <img
+              src={pakistanMap}
+            />
+            <p>Click on each location for more info</p>
+            <p className="more-coming">More coming soon!</p>
+          </div>
         </Container>
         <VideoContainer
           src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
