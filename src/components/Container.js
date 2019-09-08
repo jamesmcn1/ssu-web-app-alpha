@@ -9,6 +9,10 @@ export class Container extends Component {
       classes.push('flex-row');
     }
 
+    if (!!this.props.pageTitle) {
+      classes.push('page-title');
+    }
+
     return (
       <div className={classes.join(' ')} style={{ textAlign: this.props.textAlign || "left" }}>
         {this.props.children}

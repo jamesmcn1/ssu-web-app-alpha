@@ -15,8 +15,10 @@ export class Projects extends Component {
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714698/Sunny%20Side%20Up/Project%20Images/20180701_132238.jpg"
           opacity={0.42}
         >
-          <Container>
-            <h1>Projects</h1>
+          <Container
+            pageTitle
+          >
+            <h1 className="page-title">Projects</h1>
           </Container>
         </ImagePartial>
         <Container>

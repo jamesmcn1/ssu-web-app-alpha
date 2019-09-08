@@ -15,11 +15,11 @@ export class People extends Component {
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
           opacity={0.42}
         >
-          <Container>
-            <div>
-              <h1>People</h1>
-              <h3>Meet our team</h3>
-            </div>
+          <Container
+            pageTitle
+          >
+            <h1 className="page-title">People</h1>
+            <h3>Meet our team</h3>
           </Container>
         </ImagePartial>
         <PeopleWidget />
