@@ -23,7 +23,7 @@ export class People extends Component {
         <Container
           flexDirection="row"
         >
-          <div>
+          <div class="people-widget">
             <p>Mahnoor Lyla Saifi</p>
             <h3>Co Director</h3>
             <p>
@@ -32,6 +32,12 @@ export class People extends Component {
               she is a perfect fit for the sustainability and events management sector.
               Currently residing in Toronto she looks after our club nights and fundraising operations.
             </p>
+            <div className="thumbnail-container">
+              <div className="thumbnail-image"></div>
+              <div className="thumbnail-image"></div>
+              <div className="thumbnail-image"></div>
+              <div className="thumbnail-image"></div>
+            </div>
           </div>
           <img
             className="img-bubble"
