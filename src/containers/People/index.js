@@ -20,7 +20,7 @@ export class People extends Component {
             pageTitle
           >
             <h1 className="page-title">People</h1>
-            <h3>Meet our team</h3>
+            <h3 className="sub-title">Meet our team</h3>
           </Container>
         </ImagePartial>
         <PeopleWidget />

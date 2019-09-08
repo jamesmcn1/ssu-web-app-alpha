@@ -20,7 +20,9 @@ export class PeopleWidget extends Component {
     const thumbnails = people.map((x, i) =>
       <div className="thumbnail-image" onClick={() => this.setState({ index: i })}>
         <img
-          src={x.imgUrl}
+          alt=""
+          className="img-thumb"
+          style={{ backgroundImage: `url(${x.imgUrl})` }}
         />
       </div>
     );
@@ -40,8 +42,10 @@ export class PeopleWidget extends Component {
           </div>
         </div>
         <img
+          alt=""
+          src=""
           className="img-bubble"
-          src={people[this.state.index].imgUrl}
+          style={{ backgroundImage: `url(${people[this.state.index].imgUrl})` }}
         />
       </Container>
     );
