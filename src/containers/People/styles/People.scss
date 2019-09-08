@@ -31,19 +31,24 @@
       width: 100px;
       height: 100px;
       margin-right: 15px;
+      // width: 100%;
+      // height: 100%;
+      background-size:cover;
+      background-position:center center;
+      background-repeat:no-repeat;
       &:hover {
         cursor: pointer;
       }
       &:last-of-type {
         margin-right: 0px;
       }
-      .img-thumb {
-        width: 100%;
-        height: 100%;
-        background-size:cover;
-        background-position:center center;
-        background-repeat:no-repeat;
-      }
+      // .img-thumb {
+      //   width: 100%;
+      //   height: 100%;
+      //   background-size:cover;
+      //   background-position:center center;
+      //   background-repeat:no-repeat;
+      // }
     }
   }
 }

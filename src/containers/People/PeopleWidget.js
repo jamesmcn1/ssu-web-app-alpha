@@ -18,13 +18,11 @@ export class PeopleWidget extends Component {
     console.log(people);
 
     const thumbnails = people.map((x, i) =>
-      <div className="thumbnail-image" onClick={() => this.setState({ index: i })}>
-        <img
-          alt=""
-          className="img-thumb"
-          style={{ backgroundImage: `url(${x.imgUrl})` }}
-        />
-      </div>
+      <div
+        className="thumbnail-image"
+        onClick={() => this.setState({ index: i })}
+        style={{ backgroundImage: `url(${x.imgUrl})` }}
+      />
     );
 
     return (
