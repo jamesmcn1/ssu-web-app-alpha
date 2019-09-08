@@ -35,7 +35,7 @@ export class PeopleWidget extends Component {
           <p className="description">
             {people[this.state.index].description}
           </p>
-          <div className="thumbnail-container">
+          <div className="thumbnail-container not-mobile">
             {thumbnails}
           </div>
         </div>
@@ -43,6 +43,9 @@ export class PeopleWidget extends Component {
           className="img-bubble"
           style={{ backgroundImage: `url(${people[this.state.index].imgUrl})` }}
         />
+        <div className="thumbnail-container mobile-only">
+          {thumbnails}
+        </div>
       </Container>
     );
   }
