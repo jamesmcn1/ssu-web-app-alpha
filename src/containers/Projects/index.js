@@ -23,14 +23,11 @@ export class Projects extends Component {
           </Container>
         </ImagePartial>
         <Container>
-          <h1>Projects</h1>
-          <div>
-            <h3>
-              Sunny Side Up! is a global organization dedicated to making the World
-              a more sustainable place to live in - especially for those whom do not
-              have access to tools or education to make this happen.
-            </h3>
-          </div>
+          <h3>
+            Sunny Side Up! is a global organization dedicated to making the World
+            a more sustainable place to live in - especially for those whom do not
+            have access to tools or education to make this happen.
+          </h3>
 
           <div className="img-text-container">
             <p>
@@ -42,9 +39,9 @@ export class Projects extends Component {
               but also enable the extension of electricity to street lighting,
               community centers, hospitals, and schools.
             </p>
-            <img
+            <div
               className="img-bubble"
-              src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714693/Sunny%20Side%20Up/Project%20Images/20180701_132103_0.jpg"
+              style={{ backgroundImage: `url(https://res.cloudinary.com/nineteesvintage/image/upload/v1567714693/Sunny%20Side%20Up/Project%20Images/20180701_132103_0.jpg)` }}
             />
           </div>
 

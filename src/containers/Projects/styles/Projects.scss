@@ -1,13 +1,27 @@
 
+h3 {
+  text-align: center;
+  color: $orange;
+  max-width: 686px;
+  margin: 0 auto;
+}
+
 .img-text-container {
   @media (min-width: $medium) {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    max-width: 475px;
   }
   .img-bubble {
     height: 620px;
     max-width: 620px;
     border-radius: 50%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
   }
 }
