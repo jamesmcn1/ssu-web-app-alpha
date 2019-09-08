@@ -79,15 +79,24 @@
 }
 
 .thanks-container {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 150px;
+  @media (min-width: $medium) {
+    margin-top: 100px;
+  }
   h3 {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     color: $orange;
+    @media (min-width: $medium) {
+      font-size: 45px;
+    }
   }
   p {
-    font-size: 22px;
+    font-size: 20px;
+    @media (min-width: $medium) {
+      font-size: 22px;
+    }
     &.ssu {
       color: $orange;
     }
