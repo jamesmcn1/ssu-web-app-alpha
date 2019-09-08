@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
+
+import PeopleWidget from './PeopleWidget';
 // import ImagePartial from '../../components/ImagePartial';
 
 export class People extends Component {
@@ -20,30 +22,7 @@ export class People extends Component {
             src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
           />
         </Container>
-        <Container
-          flexDirection="row"
-        >
-          <div class="people-widget">
-            <p>Mahnoor Lyla Saifi</p>
-            <h3>Co Director</h3>
-            <p>
-              An entrepreneur and DJ, Mahnoor is an outgoing and ambitious asset to Sunny Side Up!
-              Obtaining a MAHons in International Relations & Management from the University of St Andrews,
-              she is a perfect fit for the sustainability and events management sector.
-              Currently residing in Toronto she looks after our club nights and fundraising operations.
-            </p>
-            <div className="thumbnail-container">
-              <div className="thumbnail-image"></div>
-              <div className="thumbnail-image"></div>
-              <div className="thumbnail-image"></div>
-              <div className="thumbnail-image"></div>
-            </div>
-          </div>
-          <img
-            className="img-bubble"
-            src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"
-          />
-        </Container>
+        <PeopleWidget />
         <Container>
           <h3>Special Thanks</h3>
           <p>
