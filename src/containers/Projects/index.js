@@ -71,7 +71,7 @@ export class Projects extends Component {
           <p>More coming soon!</p>
         </Container>
         <VideoContainer
-          src=""
+          src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
         />
       </Screen>
     );
