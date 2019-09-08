@@ -39,9 +39,7 @@ export class PeopleWidget extends Component {
             {thumbnails}
           </div>
         </div>
-        <img
-          alt=""
-          src=""
+        <div
           className="img-bubble"
           style={{ backgroundImage: `url(${people[this.state.index].imgUrl})` }}
         />
