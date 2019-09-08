@@ -30,26 +30,26 @@ export class Menu extends Component {
 
     return (
       <div className={classes.join(' ')}>
-        <span onClick={() => this.openMenu()}>
+        <span onClick={this.openMenu}>
           <img src={logo} />
         </span>
         <div className="menu-div">
-          <div onClick={() => this.closeMenu()}>
+          <div onClick={this.closeMenu}>
             <img src={logo} />
           </div>
           <h2>
             Sunny Side Up!
           </h2>
           <hr />
-          <Link className="link" to="/projects">
+          <Link className="link" to="/projects" onClick={this.closeMenu}>
             Projects
           </Link>
           <hr />
-          <Link className="link" to="/events">
+          <Link className="link" to="/events" onClick={this.closeMenu}>
             Events
           </Link>
           <hr />
-          <Link className="link" to="/people">
+          <Link className="link" to="/people" onClick={this.closeMenu}>
             People
           </Link>
           <hr />
