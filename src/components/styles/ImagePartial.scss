@@ -4,6 +4,9 @@
   height: 710px;
   position: relative;
   z-index: 1;
+  &.page-title {
+    border-bottom: 1px solid $orange;
+  }
   .background-img {
     position: absolute;
     z-index: -1;

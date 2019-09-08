@@ -12,6 +12,7 @@ export class Projects extends Component {
     return (
       <Screen>
         <ImagePartial
+          pageTitle
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714698/Sunny%20Side%20Up/Project%20Images/20180701_132238.jpg"
           opacity={0.42}
         >

@@ -10,9 +10,16 @@ export class ImagePartial extends Component {
       opacity: this.props.opacity || 1,
     };
   }
+
   render() {
+    let classes = ['image-partial'];
+
+    if (!!this.props.pageTitle) {
+      classes.push('page-title');
+    }
+
     return (
-      <div className="image-partial">
+      <div className={classes.join(' ')}>
         <div className="background-img" style={this.state}></div>
         {this.props.children}
       </div>

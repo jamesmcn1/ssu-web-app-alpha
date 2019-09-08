@@ -10,7 +10,7 @@ export class Events extends Component {
     return (
       <Screen>
         <Container>
-          <h1>Events</h1>
+          <h1 className="page-title">Events</h1>
           <EventCard
             name=""
             src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
