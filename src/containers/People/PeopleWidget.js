@@ -29,9 +29,9 @@ export class PeopleWidget extends Component {
       <Container
         flexDirection="row"
       >
-        <div class="people-widget-content">
-          <h1>{people[this.state.index].name}</h1>
-          <h3>{people[this.state.index].title}</h3>
+        <div className="people-widget-content">
+          <h1 className="name">{people[this.state.index].name}</h1>
+          <h3 className="title">{people[this.state.index].title}</h3>
           <p className="description">
             {people[this.state.index].description}
           </p>
