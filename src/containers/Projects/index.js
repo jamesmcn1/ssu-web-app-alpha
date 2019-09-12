@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
+import MapWidget from './MapWidget';
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
 import VideoContainer from '../../components/VideoContainer';
 import ImagePartial from '../../components/ImagePartial';
 
-import pakistanMap from "../../assets/images/pakistan-map.gif";
 
 export class Projects extends Component {
   render() {
@@ -23,7 +23,7 @@ export class Projects extends Component {
           </Container>
         </ImagePartial>
         <Container>
-          <h3>
+          <h3 class="projects-subtitle">
             Sunny Side Up! is a global organization dedicated to making the World
             a more sustainable place to live in - especially for those whom do not
             have access to tools or education to make this happen.
@@ -57,18 +57,7 @@ export class Projects extends Component {
             </p>
           </div>
         </Container>
-        <Container
-          textAlign="center"
-        >
-          <div className="map-container">
-            <h1 class="map">Sunny Side Up! project locations in Pakistan</h1>
-            <img
-              src={pakistanMap}
-            />
-            <p>Click on each location for more info</p>
-            <p className="more-coming">More coming soon!</p>
-          </div>
-        </Container>
+        <MapWidget />
         <VideoContainer
           src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
         />

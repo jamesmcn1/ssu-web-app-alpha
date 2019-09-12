@@ -1,5 +1,5 @@
 
-h3 {
+h3.projects-subtitle {
   text-align: center;
   color: $orange;
   max-width: 686px;
@@ -33,17 +33,76 @@ h3 {
   }
 }
 
-.map-container {
+.map-widget-container {
   h1.map {
     margin-bottom: 100px;
     color: $orange;
   }
-  img {
-    width: 100%;
+  .map-container {
+    position: relative;
     max-width: 550px;
     margin: 0 auto;
+    img.map {
+      width: 100%;
+    }
+    .sun-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      img {
+        height: 35px;
+        width: 35px;
+        z-index: 10;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .sun-text {
+        margin-top: 0px
+      }
+    }
   }
   .more-coming {
     margin-bottom: 120px;
+  }
+}
+
+.projectModal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: $black;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.projectOverlay {
+  position: fixed;
+  overflow: scroll;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black;
+  &:focus {
+    outline: 0;
+  }
+}
+
+img.close {
+  height: 35px;
+  width: 35px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.project-modal-content {
+  @media (min-width: $medium) {
+    display: flex;
+    flex-direction: row;
   }
 }
