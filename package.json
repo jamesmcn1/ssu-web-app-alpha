@@ -21,6 +21,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "postinstall": "npm install",
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
     "wdio": "wdio",
