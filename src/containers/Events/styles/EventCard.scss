@@ -40,6 +40,18 @@
     height: calc(100% - 140px);
     margin: 70px 60px;
     transition: 0.3s;
+    h1, h3, p {
+      color: $brown;
+      text-align: center;
+    }
+    .link {
+      background-color: $orange;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 80px;
+      width: 80px;
+    }
   }
   &:hover {
     .info {

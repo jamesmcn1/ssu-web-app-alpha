@@ -29,6 +29,9 @@ export class Events extends Component {
               cols={1}
               spacing={0}
             >
+              <div className="event-card-container">
+                <h1>Events</h1>
+              </div>
               {eventCards}
             </GridList>
           </div>
