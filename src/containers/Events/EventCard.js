@@ -22,7 +22,9 @@ export class EventCard extends Component {
               <h3>{date}</h3>
               <h3>{venue}</h3>
             </div>
-            <p>{description}</p>
+            {
+              description && <p>{description}</p>
+            }
           </div>
           <div className="link"></div>
         </div>
