@@ -7,7 +7,6 @@ import Home from '../Home';
 import Projects from '../Projects';
 import Events from '../Events';
 import People from '../People';
-import FloatCart from '../FloatCart';
 
 const App = () => (
   <React.Fragment>
@@ -19,7 +18,6 @@ const App = () => (
         <Route exact path="/events" component={Events} />
         <Route exact path="/people" component={People} />
       </Router>
-      <FloatCart />
     </main>
   </React.Fragment>
 );
