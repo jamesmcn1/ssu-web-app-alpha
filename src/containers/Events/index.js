@@ -4,10 +4,22 @@ import GridList from '@material-ui/core/GridList';
 import Screen from '../../components/Screen';
 import Container from '../../components/Container';
 import EventCard from './EventCard';
-// import ImagePartial from '../../components/ImagePartial';
+import { events } from './EventsData.js';
 
 export class Events extends Component {
   render() {
+
+    const eventCards = events.map((x, i) =>
+      <EventCard
+        name={x.name}
+        src={x.posterURL}
+        date={x.date}
+        venue={x.venue}
+        eventLink={x.eventLink}
+      />
+    );
+
+
     return (
       <Screen>
         <Container>
@@ -17,30 +29,7 @@ export class Events extends Component {
               cols={1}
               spacing={0}
             >
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
-              <EventCard
-                name=""
-                src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567634931/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_ZAPATA_RED_A3.jpg"
-              />
+              {eventCards}
             </GridList>
           </div>
         </Container>
