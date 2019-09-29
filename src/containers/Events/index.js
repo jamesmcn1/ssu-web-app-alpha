@@ -26,11 +26,11 @@ export class Events extends Component {
           <div className="event-card-list">
             <GridList
               cellHeight='auto'
-              cols={1}
+              cols={2}
               spacing={0}
             >
-              <div className="event-card-container">
-                <h1>Events</h1>
+              <div className="event-card-container empty">
+                <h1 className="page-title">Events</h1>
               </div>
               {eventCards}
             </GridList>
