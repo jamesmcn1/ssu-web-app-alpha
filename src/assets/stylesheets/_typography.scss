@@ -29,3 +29,20 @@ p {
 a {
   color: $white;
 }
+
+// mixins
+
+@mixin font-light {
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin font-book {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-medium {
+  font-style: normal;
+  font-weight: 500;
+}
