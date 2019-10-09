@@ -17,6 +17,9 @@ export class ImagePartial extends Component {
     if (!!this.props.pageTitle) {
       classes.push('page-title');
     }
+    if (!!this.props.borderTop) {
+      classes.push('border-top');
+    }
 
     return (
       <div className={classes.join(' ')}>

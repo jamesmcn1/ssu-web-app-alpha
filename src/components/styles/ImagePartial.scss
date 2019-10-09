@@ -4,6 +4,9 @@
   height: 710px;
   position: relative;
   z-index: 1;
+  &.border-top {
+    border-top: 1px solid $yellow;
+  }
   &.page-title {
     border-bottom: 1px solid $orange;
   }

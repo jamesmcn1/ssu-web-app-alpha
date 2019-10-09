@@ -2,37 +2,58 @@ h1,h2,h3 {
   @include font-light();
 }
 
-.home-stat-container {
-  margin-top: 100px;
-  @media (min-width: $medium) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.container.home-stats {
+  h3 {
+    max-width: 767px;
+    margin: 0 auto;
   }
-  .home-stat-card {
-    background-color: $yellow;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    margin-bottom: 70px;
-    .triangle {
-      // background-color: $yellow;
-      // width: 150px;
-      // height: 40px;
-      width: 0;
-      height: 0;
-      border-right: 75px solid transparent;
-      border-left: 75px solid transparent;
-      position: absolute;
-
-      left: 0;
-      &.top {
-        top: -39px;
-        border-bottom: 40px solid $yellow;
+  .home-stat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 767px;
+    margin: 120px auto 70px;
+    @media (min-width: $medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 200px;
+    }
+    .home-stat-card-container {
+      @media (max-width: $medium - 1){
+        margin-bottom: 70px;
       }
-      &.bottom {
-        bottom: -39px;
-        border-top: 40px solid $yellow;
+      .home-stat-card {
+        @media (max-width: $medium - 1){
+          margin: 0 auto 70px;
+        }
+        background-color: $yellow;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        margin-bottom: 70px;
+        .triangle {
+          // background-color: $yellow;
+          // width: 150px;
+          // height: 40px;
+          width: 0;
+          height: 0;
+          border-right: 75px solid transparent;
+          border-left: 75px solid transparent;
+          position: absolute;
+
+          left: 0;
+          &.top {
+            top: -39px;
+            border-bottom: 40px solid $yellow;
+          }
+          &.bottom {
+            bottom: -39px;
+            border-top: 40px solid $yellow;
+          }
+        }
+      }
+      p {
+        margin-top: -20px;
       }
     }
   }

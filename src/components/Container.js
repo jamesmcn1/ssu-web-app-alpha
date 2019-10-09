@@ -5,6 +5,10 @@ export class Container extends Component {
 
     let classes = ['container'];
 
+    if (this.props.className) {
+      classes.push(this.props.className);
+    }
+
     if (this.props.flexDirection === 'row') {
       classes.push('flex-row');
     }
@@ -13,11 +17,24 @@ export class Container extends Component {
       classes.push('page-title');
     }
 
-    return (
+    // main container component
+    const container = (
       <div className={classes.join(' ')} style={{ textAlign: this.props.textAlign || "left" }}>
         {this.props.children}
       </div>
     );
+
+    // divider needs to wrap around container
+    if (this.props.divider) {
+      return (
+        <div className="divider">
+          <div class="divider-triangle" />
+          {container}
+        </div>
+      );
+    }
+
+    return container;
   }
 }
 

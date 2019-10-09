@@ -38,38 +38,41 @@ export class Home extends Component {
         </ImagePartial>
         <Container
           textAlign="center"
+          className="home-stats"
+          divider
         >
           <h1>How we help</h1>
-          <h3>Sunny Side Up aims to tackle this by installing solar panels in rural communities, allowing them access to a reliable and sustainable source of energy.</h3>
-          <div class="home-stat-container">
-            <div class="home-stat-card-container">
-              <div class="home-stat-card">
-                <div class="triangle top"></div>
-                <div class="triangle bottom"></div>
+          <h3 className="stats-subheading">Sunny Side Up aims to tackle this by installing solar panels in rural communities, allowing them access to a reliable and sustainable source of energy.</h3>
+          <div className="home-stat-container">
+            <div className="home-stat-card-container">
+              <div className="home-stat-card">
+                <div className="triangle top" />
+                <div className="triangle bottom" />
               </div>
               <h1>75</h1>
-              <h2>Solar panels</h2>
+              <p>Solar panels</p>
             </div>
-            <div class="home-stat-card-container">
-              <div class="home-stat-card">
-                <div class="triangle top"></div>
-                <div class="triangle bottom"></div>
+            <div className="home-stat-card-container">
+              <div className="home-stat-card">
+                <div className="triangle top" />
+                <div className="triangle bottom" />
               </div>
-              <h1>5000</h1>
-              <h2>Raised</h2>
+              <h1>&pound;5000</h1>
+              <p>Raised</p>
             </div>
-            <div class="home-stat-card-container">
-              <div class="home-stat-card">
-                <div class="triangle top"></div>
-                <div class="triangle bottom"></div>
+            <div className="home-stat-card-container">
+              <div className="home-stat-card">
+                <div className="triangle top" />
+                <div className="triangle bottom" />
               </div>
               <h1>3</h1>
-              <h2>Communities</h2>
+              <p>Communities</p>
             </div>
           </div>
         </Container>
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
+          borderTop
         >
           <Container
             textAlign="right"
