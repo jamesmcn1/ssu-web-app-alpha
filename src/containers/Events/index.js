@@ -9,7 +9,7 @@ import { events } from './EventsData.js';
 export class Events extends Component {
   render() {
 
-    const eventCards = events.map((x, i) =>
+    const eventCards = events.sort((a,b) => b.date - a.date).map((x, i) =>
       <EventCard
         name={x.name}
         src={x.posterURL}

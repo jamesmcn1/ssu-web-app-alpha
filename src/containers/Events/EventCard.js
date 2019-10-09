@@ -10,11 +10,12 @@ export class EventCard extends Component {
       date,
       venue,
       description,
+      posterURL,
     } = this.props;
 
     return (
       <div className="event-card-container">
-        <img src={src} className="img"/>
+        <img src={src} className="img" />
         <div class="info">
           <div className="info-content">
             <h1>{name}</h1>
@@ -26,7 +27,13 @@ export class EventCard extends Component {
               description && <p>{description}</p>
             }
           </div>
-          <div className="link"></div>
+          <a
+            class="link-anchor"
+            href={posterURL || ''}
+            target="_blank"
+          >
+            <div className="link" />
+          </a>
         </div>
       </div>
     );
