@@ -1,108 +1,141 @@
-
-h3.projects-subtitle {
-  text-align: center;
-  color: $orange;
-  max-width: 686px;
-  margin: 0 auto;
-}
-
-.img-text-container {
-  @media (min-width: $medium) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 150px;
-  }
-  p {
-    max-width: 475px;
-    &.left {
-      margin-right: 40px;
-    }
-    &.right {
-      margin-left: 40px;
-    }
-   }
-  .img-bubble {
-    height: 475px;
-    max-width: 475px;
-    border-radius: 50%;
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-  }
-}
-
-.map-widget-container {
-  h1.map {
-    margin-bottom: 100px;
+.projects-screen {
+  h3.projects-subtitle {
+    text-align: center;
     color: $orange;
-  }
-  .map-container {
-    position: relative;
-    max-width: 550px;
+    max-width: 686px;
     margin: 0 auto;
-    img.map {
-      width: 100%;
+  }
+
+  .img-text-container {
+    @media (min-width: $medium) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 150px;
     }
-    .sun-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      img {
-        height: 35px;
-        width: 35px;
-        z-index: 10;
-        &:hover{
-          cursor: pointer;
+    p {
+      max-width: 475px;
+      &.left {
+        margin-right: 40px;
+      }
+      &.right {
+        margin-left: 40px;
+      }
+     }
+    .img-bubble {
+      height: 475px;
+      max-width: 475px;
+      border-radius: 50%;
+      background-size:cover;
+      background-position:center center;
+      background-repeat:no-repeat;
+    }
+  }
+
+  .map-widget-container {
+    h1.map {
+      margin-bottom: 100px;
+      color: $orange;
+    }
+    .map-container {
+      position: relative;
+      max-width: 550px;
+      margin: 0 auto;
+      img.map {
+        width: 100%;
+      }
+      .sun-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        img {
+          height: 35px;
+          width: 35px;
+          z-index: 10;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .sun-text {
+          margin-top: 0px
         }
       }
-      .sun-text {
-        margin-top: 0px
-      }
+    }
+    .more-coming {
+      margin-bottom: 120px;
     }
   }
-  .more-coming {
-    margin-bottom: 120px;
-  }
-}
 
-.projectModal {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
-  background-color: $black;
-  &:focus {
-    outline: 0;
+  .projectModal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: $black;
+    &:focus {
+      outline: 0;
+    }
   }
-}
 
-.projectOverlay {
-  position: fixed;
-  overflow: scroll;
-  z-index: 9999999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $black;
-  &:focus {
-    outline: 0;
+  .projectOverlay {
+    position: fixed;
+    overflow: scroll;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $black;
+    &:focus {
+      outline: 0;
+    }
   }
-}
 
-img.close {
-  height: 35px;
-  width: 35px;
-  &:hover{
-    cursor: pointer;
+  img.close {
+    height: 35px;
+    width: 35px;
+    &:hover{
+      cursor: pointer;
+    }
   }
-}
-.project-modal-content {
-  @media (min-width: $medium) {
+  .project-modal-content {
+    @media (min-width: $medium) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .thumbnail-container {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    &.mobile-only {
+      justify-content: space-between;
+      margin-top: 40px;
+      @media (min-width: $medium) {
+        display: none;
+      }
+    }
+    &.not-mobile {
+      @media (max-width: $medium - 1) {
+        display: none;
+      }
+    }
+    .thumbnail-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 15px;
+      background-size:cover;
+      background-position:center center;
+      background-repeat:no-repeat;
+      &:hover {
+        cursor: pointer;
+      }
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
   }
 }

@@ -10,7 +10,9 @@ import PeopleWidget from './PeopleWidget';
 export class People extends Component {
   render() {
     return (
-      <Screen>
+      <Screen
+        className="people-screen"
+      >
         <ImagePartial
           pageTitle
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567943446/Sunny%20Side%20Up/Project%20Images/Demuja.jpg"

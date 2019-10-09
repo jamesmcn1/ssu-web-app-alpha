@@ -21,7 +21,9 @@ export class Events extends Component {
 
 
     return (
-      <Screen>
+      <Screen
+        className="events-screen"
+      >
         <Container>
           <div className="event-card-list">
             <GridList

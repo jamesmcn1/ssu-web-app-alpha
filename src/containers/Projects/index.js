@@ -10,7 +10,9 @@ import ImagePartial from '../../components/ImagePartial';
 export class Projects extends Component {
   render() {
     return (
-      <Screen>
+      <Screen
+        className="projects-screen"
+      >
         <ImagePartial
           pageTitle
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567714698/Sunny%20Side%20Up/Project%20Images/20180701_132238.jpg"
