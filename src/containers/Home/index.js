@@ -41,6 +41,32 @@ export class Home extends Component {
         >
           <h1>How we help</h1>
           <h3>Sunny Side Up aims to tackle this by installing solar panels in rural communities, allowing them access to a reliable and sustainable source of energy.</h3>
+          <div class="home-stat-container">
+            <div class="home-stat-card-container">
+              <div class="home-stat-card">
+                <div class="triangle top"></div>
+                <div class="triangle bottom"></div>
+              </div>
+              <h1>75</h1>
+              <h2>Solar panels</h2>
+            </div>
+            <div class="home-stat-card-container">
+              <div class="home-stat-card">
+                <div class="triangle top"></div>
+                <div class="triangle bottom"></div>
+              </div>
+              <h1>5000</h1>
+              <h2>Raised</h2>
+            </div>
+            <div class="home-stat-card-container">
+              <div class="home-stat-card">
+                <div class="triangle top"></div>
+                <div class="triangle bottom"></div>
+              </div>
+              <h1>3</h1>
+              <h2>Communities</h2>
+            </div>
+          </div>
         </Container>
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"

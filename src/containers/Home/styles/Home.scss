@@ -1,0 +1,39 @@
+h1,h2,h3 {
+  @include font-light();
+}
+
+.home-stat-container {
+  margin-top: 100px;
+  @media (min-width: $medium) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home-stat-card {
+    background-color: $yellow;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 70px;
+    .triangle {
+      // background-color: $yellow;
+      // width: 150px;
+      // height: 40px;
+      width: 0;
+      height: 0;
+      border-right: 75px solid transparent;
+      border-left: 75px solid transparent;
+      position: absolute;
+
+      left: 0;
+      &.top {
+        top: -39px;
+        border-bottom: 40px solid $yellow;
+      }
+      &.bottom {
+        bottom: -39px;
+        border-top: 40px solid $yellow;
+      }
+    }
+  }
+}
