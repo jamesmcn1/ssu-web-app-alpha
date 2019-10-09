@@ -15,8 +15,6 @@ export class PeopleWidget extends Component {
   }
 
   render() {
-    console.log(people);
-
     const thumbnails = people.map((x, i) =>
       <div
         className="thumbnail-image"

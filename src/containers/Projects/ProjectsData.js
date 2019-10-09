@@ -1,19 +1,26 @@
 export const projects = [
   {
-    name: "Multan",
+    name: "Pano Aqui",
+    mapPositionTop: 0,
+    mapPositionLeft: 100,
     province: "Sindh",
-    // description: "An entrepreneur and DJ, Mahnoor is an outgoing and ambitious asset to Sunny Side Up!. Obtaining a MAHons in International Relations & Management from the University of St Andrews, she is a perfect fit for the sustainability and events management sector. Currently residing in Toronto, she looks after our club nights and fundraising operations.",
+    description: "Pano Akil, Sindh is an off-grid village in the southern most province of Pakistan where there is extreme heat, no electricity, and a lack of clean water supply. Living there are pockets of communities doing their best to adapt with this harsh environment. Our projects have brought development to these remote populations so they are able to enjoy all aspects of life without having to worry about something as basic as a working lightbulb or a fan to cool down from the rough climate. We have been able to implement 45 solar units to the communities living in Pano Akil. Additionally, we were also able to distribute units to a neighboring Hindu village, power a mosque, and teach the community about the benefits of the project. We are currently in the process of sourcing 15 more solar units at which point the entire village will have access to sustainable energy in their homes.",
+    dateCompleted: "June 2018",
+    imgUrlOne: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
+    imgUrlTwo: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
+    imgUrlThree: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
+    imgUrlFour: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
   },
-  // {
-  //   name: "Miran Saifi",
-  //   title: "Co Director",
-  //   description: "Lived around the World, worked closely with development projects, and obtaining an International Business degree from the University of Edinburgh, Miran is the perfect match for our operations and project manager in Pakistan. Based in Karachi, he deals with research, holds close relationships with our sponsors, and ensures our projects are running effectively.",
-  //   imgUrl: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947202/Sunny%20Side%20Up/People/Miran_photo.png"
-  // },
-  // {
-  //   name: "Samir Habib",
-  //   title: "Board of Directors",
-  //   description: "On board with SSU’s vision from the beginning. Currently based in Dublin, Samir gives us oversight in making important decisions on our project plans.",
-  //   imgUrl: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg"
-  // },
+  {
+    name: "Multan",
+    mapPositionTop: 100,
+    mapPositionLeft: 200,
+    province: "",
+    description: "",
+    dateCompleted: "",
+    imgUrlOne: "",
+    imgUrlTwo: "",
+    imgUrlThree: "",
+    imgUrlFour: "",
+  },
 ];
