@@ -24,7 +24,7 @@
 
 .divider {
   position: relative;
-  border-top: 1px solid $yellow;
+  border-top: 1px solid $orange;
   .divider-triangle {
     position: absolute;
     top: -40;
@@ -33,6 +33,6 @@
     height: 0;
     border-right: 35px solid transparent;
     border-left: 35px solid transparent;
-    border-top: 40px solid $yellow;
+    border-top: 40px solid $orange;
   }
 }

@@ -27,13 +27,13 @@
           @media (max-width: $medium - 1){
             margin: 0 auto 70px;
           }
-          background-color: $yellow;
+          background-color: $orange;
           width: 150px;
           height: 150px;
           position: relative;
           margin-bottom: 70px;
           .triangle {
-            // background-color: $yellow;
+            // background-color: $orange;
             // width: 150px;
             // height: 40px;
             width: 0;
@@ -45,11 +45,11 @@
             left: 0;
             &.top {
               top: -39px;
-              border-bottom: 40px solid $yellow;
+              border-bottom: 40px solid $orange;
             }
             &.bottom {
               bottom: -39px;
-              border-top: 40px solid $yellow;
+              border-top: 40px solid $orange;
             }
           }
         }

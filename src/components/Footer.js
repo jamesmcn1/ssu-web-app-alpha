@@ -8,15 +8,17 @@ export class Footer extends Component {
     return (
       <div className="footer-container">
         <div className="footer-div mobile-only">
-          <div>
-            <img src={logo} />
+          <div className="top-part">
+            <div>
+              <img src={logo} />
+            </div>
+            <h2>
+              Sunny Side Up!
+            </h2>
+            <p class="motto-text">
+              Working today for a brighter & better tomorrow
+            </p>
           </div>
-          <h2>
-            Sunny Side Up!
-          </h2>
-          <p>
-            Working today for a brighter & better tomorrow
-          </p>
           <hr />
           <Link className="link" to="/projects">
             Projects
@@ -30,15 +32,17 @@ export class Footer extends Component {
             People
           </Link>
           <hr />
-          <p className="enquiries">
-            General Enquiries: <span>info@sunnysideupglobal.org</span>
-          </p>
-          <p>
-            © Sunny Side Up! 2019
-          </p>
-          <p>
-            <span>Website</span> by James McNamara
-          </p>
+          <div className="bottom-part">
+            <p className="enquiries">
+              General Enquiries: <span>info@sunnysideupglobal.org</span>
+            </p>
+            <p className="website">
+              <span>Website</span> by James McNamara
+            </p>
+            <p>
+              © Sunny Side Up! 2019
+            </p>
+          </div>
         </div>
         <div className="footer-div not-mobile">
           <div class="top-row">
@@ -47,7 +51,7 @@ export class Footer extends Component {
                 Sunny Side Up!
               </h2>
               <div className="links">
-                 <p>Explore</p>
+                 <p className="link">Explore</p>
                 <Link className="link" to="/projects">
                   Projects
                 </Link>
@@ -63,7 +67,7 @@ export class Footer extends Component {
             </div>
             <div className="icon-container">
               <img src={logo} />
-              <p>
+              <p class="motto-text">
                 Working today for a brighter & better tomorrow
               </p>
             </div>

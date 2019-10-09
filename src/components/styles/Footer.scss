@@ -18,6 +18,19 @@
       @media (min-width: $medium) {
         display: none;
       }
+      .top-part {
+        margin-bottom: 20px;
+      }
+      .bottom-part {
+        margin-bottom: 20px;
+        .enquiries {
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+        .website {
+          margin-bottom: 20px;
+        }
+      }
     }
     &.not-mobile {
       @media (max-width: $medium - 1) {
@@ -29,18 +42,25 @@
         justify-content: space-between;
         h2 {
           text-align: left;
+          font-size: 30px;
         }
         .links {
           display: flex;
           flex-direction: row;
-          p {
+          .link {
             font-size: 25px;
+            @media(min-width: $medium) {
+              margin-right: 30px;
+            }
+            @media(min-width: $large) {
+              margin-right: 55px;
+            }
+          }
+          p {
             padding: 20px 0;
             margin: 0;
-            margin-right: 55px;
           }
           a {
-            margin-right: 57px;
             &:last-of-type {
               margin-right: 0px;
             }
@@ -50,6 +70,16 @@
           display: flex;
           flex-direction: column;
           align-items: flex-end;
+          @media (min-width: $medium) {
+            max-width: 200px;
+            margin-left: auto;
+          }
+          .motto-text {
+            color: $orange;
+            @media (min-width: $medium) {
+              text-align: right;
+            }
+          }
         }
       }
       .second-row {
@@ -62,6 +92,9 @@
         flex-direction: row;
         justify-content: center;
       }
+    }
+    .motto-text {
+      color: $orange;
     }
     img {
       height: 80px;

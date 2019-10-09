@@ -6,15 +6,17 @@ import Footer from './Footer';
 
 export class Screen extends Component {
   render() {
-    let classes = ['screen'];
+    let classes = [''];
 
     if (this.props.className) { classes.push(this.props.className); }
     if (this.props.noMaxWidth) { classes.push('noMaxWidth'); }
 
     return (
-      <div className={classes.join(' ')}>
+      <div className='screen'>
         <Header />
-        {this.props.children}
+        <div className={classes.join(' ')}>
+          {this.props.children}
+        </div>
         <Footer />
       </div>
     );
