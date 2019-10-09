@@ -5,16 +5,14 @@ import Header from './Header';
 import Footer from './Footer';
 
 export class Screen extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      noMaxWidth: this.props.noMaxWidth ? 'noMaxWidth' : '',
-    };
-  }
   render() {
+    let classes = ['screen'];
+
+    if (this.props.className) { classes.push(this.props.className); }
+    if (this.props.noMaxWidth) { classes.push('noMaxWidth'); }
+
     return (
-      <div className={`screen ${this.state.noMaxWidth}`}>
+      <div className={classes.join(' ')}>
         <Header />
         {this.props.children}
         <Footer />
