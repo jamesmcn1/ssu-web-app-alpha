@@ -1,6 +1,13 @@
 .home-screen {
   h1, h2, h3 {
-    @include font-light();
+    // @include font-light();
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
   }
 
   .container.home-stats {

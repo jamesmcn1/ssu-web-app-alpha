@@ -29,7 +29,7 @@ export class Header extends Component {
     return (
       <div>
         <div className={classes.join(' ')}>
-          <span onClick={this.openMenu}>
+          <span class="menu-icon" onClick={this.openMenu}>
             <img src={logo} />
           </span>
           <div className="menu-div">
@@ -52,6 +52,16 @@ export class Header extends Component {
               <p>People</p>
             </Link>
             <hr />
+            <p className="enquiries">
+              General Enquiries: <span>info@sunnysideupglobal.org</span>
+            </p>
+            <hr />
+            <p className="small">
+              <span>Website</span> by James McNamara
+            </p>
+            <p className="small">
+              © Sunny Side Up! 2019
+            </p>
           </div>
         </div>
         <div className="header-container-not-mobile">
