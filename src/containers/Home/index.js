@@ -21,7 +21,7 @@ export class Home extends Component {
             className="home-title-partial"
             textAlign="center"
           >
-            <div>
+            <div className="text-box">
               <Slide left>
                 <h1>Sunny Side Up</h1>
                 <h3>Working today for a brighter & better tomorrow</h3>
@@ -31,23 +31,29 @@ export class Home extends Component {
         </ImagePartial>
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883250/Sunny%20Side%20Up/Project%20Images/rita-PP9m6__g1Ng-unsplash.jpg"
+          opacity={0.7}
         >
           <Container>
             <Slide left>
-              <h2>Approximately 1.1 billion people in the World live without access to electricity.</h2>
-              <h3>The majority of these individuals live in rural areas of our planet.</h3>
+              <div className="partial-text">
+                <h2>Approximately 1.1 billion people in the World live without access to electricity.</h2>
+                <h3>The majority of these individuals live in rural areas of our planet.</h3>
+              </div>
             </Slide>
           </Container>
         </ImagePartial>
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883790/Sunny%20Side%20Up/Project%20Images/homepage_photo.jpg"
+          opacity={0.7}
         >
           <Container
             textAlign="right"
           >
             <Slide right>
-              <h2>Our founders have lived across the World, being exposed to communities stricken with poverty.</h2>
-              <h3>After conducting research, they found that many off-grid communities have limited access to light during productive hours of their days.</h3>
+              <div className="partial-text right-align">
+                <h2>Our founders have lived across the World, being exposed to communities stricken with poverty.</h2>
+                <h3>After conducting research, they found that many off-grid communities have limited access to light during productive hours of their days.</h3>
+              </div>
             </Slide>
           </Container>
         </ImagePartial>
@@ -90,12 +96,15 @@ export class Home extends Component {
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
           borderTop
+          opacity={0.8}
         >
           <Container
             textAlign="right"
           >
             <Slide right>
-              <h2>We fundraise with help from our charity club nights, sponsors, and private donors.</h2>
+              <div className="partial-text right-align">
+                <h2>We fundraise with help from our charity club nights, sponsors, and private donors.</h2>
+              </div>
             </Slide>
           </Container>
         </ImagePartial>

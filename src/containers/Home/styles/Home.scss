@@ -16,16 +16,47 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    h1 {
-      font-size: 45px;
-      margin-top: 0px;
-      margin-bottom: 10px;
+    .text-box {
+      @media (max-width: $medium - 1) {
+        margin-top: -100px;
+      }
+      h1 {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        @media (min-width: $medium) {
+          font-size: 50px;
+        }
+      }
+      h3 {
+        color: $orange;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        @media (min-width: $medium) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .partial-text {
+    max-width: 900px;
+    &.right-align {
+      margin-left: auto;
+    }
+    h2 {
+      font-size: 30px;
+      @media (min-width: $medium) {
+        font-size: 45px;
+      }
     }
     h3 {
       color: $orange;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-size: 25px;
+      font-size: 22px;
+      @media (min-width: $medium) {
+        font-size: 30px;
+      }
     }
   }
 
