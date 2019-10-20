@@ -2,6 +2,10 @@
   .projects-text-container {
     padding-top: 100px;
     padding-bottom: 100px;
+    @media (min-width: $medium) {
+      padding-top: 125px;
+      padding-bottom: 125px;
+    }
     .subtitle-container {
       margin-bottom: 60px;
       @media (min-width: $medium) {
@@ -10,6 +14,7 @@
       h3.projects-subtitle {
         text-align: left;
         color: $orange;
+        max-width: 910px;
         margin: 0 auto;
         font-size: 22px;
         @media (min-width: $large) {
@@ -47,36 +52,41 @@
   }
 
   .map-widget-container {
-    h1.map {
-      margin-bottom: 100px;
-      color: $orange;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (min-width: $medium) {
+      padding-top: 125px;
+      padding-bottom: 125px;
     }
-    .map-container {
-      position: relative;
-      max-width: 550px;
-      margin: 0 auto;
-      img.map {
-        width: 100%;
+    .map-widget {
+      h1.map {
+        margin-bottom: 100px;
+        color: $orange;
       }
-      .sun-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        img {
-          height: 35px;
-          width: 35px;
-          z-index: 10;
-          &:hover{
-            cursor: pointer;
+      .map-container {
+        position: relative;
+        max-width: 550px;
+        margin: 0 auto;
+        img.map {
+          width: 100%;
+        }
+        .sun-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          img {
+            height: 35px;
+            width: 35px;
+            z-index: 10;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          .sun-text {
+            margin-top: 0px
           }
         }
-        .sun-text {
-          margin-top: 0px
-        }
       }
-    }
-    .more-coming {
-      margin-bottom: 120px;
     }
   }
 }

@@ -52,8 +52,9 @@ export class MapWidget extends Component {
     return (
       <Container
         textAlign="center"
+        className="map-widget-container"
       >
-        <div className="map-widget-container">
+        <div className="map-widget">
           <h1 class="map">Sunny Side Up! project locations in Pakistan</h1>
           <div className="map-container">
             <img
