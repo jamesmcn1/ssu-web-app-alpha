@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../assets/images/logo.png'
+import facebookIcon from '../assets/images/facebook-3-32.png'
+import instagramIcon from '../assets/images/instagram-32.png'
 
 export class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
+
         <div className="footer-div mobile-only">
           <div className="top-part">
             <div>
@@ -36,6 +39,10 @@ export class Footer extends Component {
             <p className="enquiries">
               General Enquiries: <span>info@sunnysideupglobal.org</span>
             </p>
+            <div className="social-container">
+              <img src={facebookIcon} />
+              <img src={instagramIcon} />
+            </div>
             <p className="website">
               <span>Website</span> by James McNamara
             </p>
@@ -44,6 +51,7 @@ export class Footer extends Component {
             </p>
           </div>
         </div>
+
         <div className="footer-div not-mobile">
           <div class="top-row">
             <div className="link-container">
@@ -74,6 +82,14 @@ export class Footer extends Component {
           </div>
           <hr />
           <div className='second-row'>
+            <div className="social-container">
+              <a href="www.facebook.com" target="_blank">
+                <img src={facebookIcon} />
+              </a>
+              <a href="www.instagram.com" target="_blank">
+                <img src={instagramIcon} />
+              </a>
+            </div>
             <p className="enquiries">
               General Enquiries: <span>info@sunnysideupglobal.org</span>
             </p>
