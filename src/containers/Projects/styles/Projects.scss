@@ -143,6 +143,10 @@ img.close {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 50px;
+    @media (min-width: $large) {
+      margin-right: 70px;
+      width: 50%;
+    }
     .name {
       margin-bottom: 5px;
       font-size: 35px;
@@ -169,36 +173,35 @@ img.close {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
+    width: 100%;
     @media (min-width: $large) {
       flex-direction: column;
+      width: 50%;
     }
     .main-image {
       width: 100%;
-      height: 300px;
+      // height: 300px;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      max-width: 400px;
+      // max-width: 400px;
       margin: 0 auto;
-      margin-top: 40px;
-      @media (min-width: $medium) {
-        width: 475px;
-        height: 475px;
+      @media (min-width: $large) {
+        width: 100%;
+        height: 100%;
         max-width: none;
         margin: 0;
-      }
-      @media (min-width: large) {
-        width: 475px;
-        height: 475px;
       }
     }
     .thumbnail-container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-left: 50px;
       @media (min-width: $large) {
         flex-direction: row;
         margin-top: 20px;
+        justify-content: flex-end;
       }
       &.mobile-only {
         justify-content: space-between;
@@ -215,7 +218,10 @@ img.close {
       .thumbnail-image {
         width: 100px;
         height: 100px;
-        margin-right: 15px;
+        margin-bottom: 20px;
+        @media (min-width: $large) {
+          margin-right: 15px;
+        }
         background-size:cover;
         background-position:center center;
         background-repeat:no-repeat;
@@ -224,6 +230,9 @@ img.close {
         }
         &:last-of-type {
           margin-right: 0px;
+        }
+        &:last-of-type {
+          margin-bottom: 0px;
         }
       }
     }
