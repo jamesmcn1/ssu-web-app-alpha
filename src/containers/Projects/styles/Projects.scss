@@ -1,10 +1,10 @@
 .projects-screen {
   .projects-text-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     @media (min-width: $medium) {
-      padding-top: 125px;
-      padding-bottom: 125px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
     .subtitle-container {
       margin-bottom: 60px;
@@ -52,11 +52,11 @@
   }
 
   .map-widget-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     @media (min-width: $medium) {
-      padding-top: 125px;
-      padding-bottom: 125px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
     .map-widget {
       h1.map {
@@ -82,21 +82,30 @@
               cursor: pointer;
             }
           }
-          .sun-text {
-            margin-top: 0px
-          }
         }
       }
+      .more-coming {
+        color: $orange;
+      }
+    }
+    .sun-text {
+      margin-top: 0px
     }
   }
 }
 
 .projectModal {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  @media (min-width: $medium) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
   background-color: $black;
   &:focus {
     outline: 0;
@@ -125,15 +134,72 @@ img.close {
   }
 }
 .project-modal-content {
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     display: flex;
     flex-direction: row;
   }
-
+  .modal-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .name {
+      margin-bottom: 5px;
+      font-size: 35px;
+    }
+    .province {
+      color: $orange;
+      font-size: 25px;
+      margin-top: 0px;
+    }
+    .desc {
+      margin-bottom: 30px;
+    }
+    .completed {
+      margin-bottom: 5px;
+    }
+    .maps {
+      color: $orange;
+      font-size: 22px;
+      margin-top: 0px;
+    }
+  }
+  .modal-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media (min-width: $large) {
+      flex-direction: column;
+    }
+    .main-image {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 40px;
+      @media (min-width: $medium) {
+        width: 475px;
+        height: 475px;
+        max-width: none;
+        margin: 0;
+      }
+      @media (min-width: large) {
+        width: 475px;
+        height: 475px;
+      }
+    }
     .thumbnail-container {
-      margin-top: 20px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (min-width: $large) {
+        flex-direction: row;
+        margin-top: 20px;
+      }
       &.mobile-only {
         justify-content: space-between;
         margin-top: 40px;
@@ -161,4 +227,5 @@ img.close {
         }
       }
     }
+  }
 }

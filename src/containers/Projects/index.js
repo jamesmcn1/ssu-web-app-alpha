@@ -21,7 +21,7 @@ export class Projects extends Component {
             <h1 className="page-title">Projects</h1>
           </Container>
         </ImagePartial>
-        <Container className="projects-text-container">
+        <Container className="projects-text-container" divider>
           <Fade>
             <div className="subtitle-container">
               <h3 className="projects-subtitle">
