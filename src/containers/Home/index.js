@@ -22,10 +22,10 @@ export class Home extends Component {
             textAlign="center"
           >
             <div className="text-box">
-              <Slide left>
+              <Fade>
                 <h1>Sunny Side Up</h1>
                 <h3>Working today for a brighter & better tomorrow</h3>
-              </Slide>
+              </Fade>
             </div>
           </Container>
         </ImagePartial>
