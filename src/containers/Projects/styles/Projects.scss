@@ -1,35 +1,36 @@
 .projects-screen {
-  h3.projects-subtitle {
-    text-align: center;
-    color: $orange;
-    max-width: 686px;
-    margin: 0 auto;
-  }
-
-  .img-text-container {
-    @media (min-width: $medium) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 150px;
+  .projects-text-container {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .subtitle-container {
+      margin-bottom: 80px;
+      h3.projects-subtitle {
+        text-align: left;
+        color: $orange;
+        margin: 0 auto;
+        font-size: 25px;
+        @include font-light();
+        @media (min-width: $medium) {
+          text-align: center;
+        }
+      }
     }
-    p {
-      max-width: 475px;
-      &.left {
-        margin-right: 40px;
+
+    .body-container {
+      margin-bottom: 80px;
+      .body-text {
+        font-size: 18px;
       }
-      &.right {
-        margin-left: 40px;
+    }
+
+    .donate-container {
+      .donate-text {
+        text-align: center;
+        font-size: 25px;
+        span {
+          color: $orange;
+        }
       }
-     }
-    .img-bubble {
-      height: 475px;
-      max-width: 475px;
-      border-radius: 50%;
-      background-size:cover;
-      background-position:center center;
-      background-repeat:no-repeat;
     }
   }
 
