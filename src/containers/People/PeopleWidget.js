@@ -24,9 +24,7 @@ export class PeopleWidget extends Component {
     );
 
     return (
-      <Container
-        flexDirection="row"
-      >
+      <Container flexDirection="row" divider>
         <div className="people-widget-content">
           <h1 className="name">{people[this.state.index].name}</h1>
           <h3 className="title">{people[this.state.index].title}</h3>
