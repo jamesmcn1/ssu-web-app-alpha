@@ -10,10 +10,10 @@ export class SocialLinks extends PureComponent {
   render() {
     return (
       <div className="social-links">
-        <a href="www.facebook.com" target="_blank">
+        <a href="https://www.facebook.com/sunnysideupm8" target="_blank">
           <img className="social-icon" src={facebookIcon} />
         </a>
-        <a href="www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com/____sunnysideup____/" target="_blank">
           <img className="social-icon instagram" src={instagramIcon} />
         </a>
       </div>
