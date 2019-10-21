@@ -39,6 +39,9 @@ export class Header extends Component {
             <h2>
               Sunny Side Up!
             </h2>
+            <p className="motto-text">
+              Working today for a brighter & better tomorrow
+            </p>
             <hr />
             <Link className="link" to="/projects" onClick={this.closeMenu}>
               <p>Projects</p>
