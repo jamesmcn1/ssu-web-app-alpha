@@ -61,6 +61,7 @@ export class Home extends Component {
         <Container
           textAlign="center"
           className="home-stats"
+          footerComponent={<InAppLink text="SEE OUR PROJECTS" link="/projects" />}
           divider
         >
           <Fade>
@@ -101,9 +102,7 @@ export class Home extends Component {
         >
           <Container
             textAlign="right"
-            footerComponent={
-              <InAppLink />
-            }
+            footerComponent={<InAppLink text="SEE OUR EVENTS" link="/events" />}
           >
             <Slide right>
               <div className="partial-text right-align">
