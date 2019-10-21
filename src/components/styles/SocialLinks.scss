@@ -1,0 +1,10 @@
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img.social-icon {
+    width: 33px;
+    height: 33px;
+    margin-right: 20px;
+  }
+}

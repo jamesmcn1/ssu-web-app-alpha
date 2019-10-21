@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import SocialLinks from './SocialLinks';
 import logo from '../assets/images/logo.png';
+
 
 export class Header extends Component {
   constructor(props) {
@@ -69,18 +71,23 @@ export class Header extends Component {
         </div>
         <div className="header-container-not-mobile">
           <div className="header-div not-mobile">
-            <Link className="link" to="/">
-              <img src={logo} />
-            </Link>
-            <Link className="link" to="/projects">
-              Projects
-            </Link>
-            <Link className="link" to="/events">
-              Events
-            </Link>
-            <Link className="link" to="/people">
-              People
-            </Link>
+            <div className="logo-and-nav-links">
+              <Link className="link" to="/">
+                <img src={logo} />
+              </Link>
+              <Link className="link" to="/projects">
+                Projects
+              </Link>
+              <Link className="link" to="/events">
+                Events
+              </Link>
+              <Link className="link" to="/people">
+                People
+              </Link>
+            </div>
+            <div className="social-links">
+              <SocialLinks />
+            </div>
           </div>
         </div>
       </div>

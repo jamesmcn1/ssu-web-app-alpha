@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import SocialLinks from './SocialLinks';
+
 import logo from '../assets/images/logo.png'
 import facebookIcon from '../assets/images/facebook-3-32.png'
 import instagramIcon from '../assets/images/instagram-32.png'
@@ -40,8 +42,7 @@ export class Footer extends Component {
               General Enquiries: <span>info@sunnysideupglobal.org</span>
             </p>
             <div className="social-container">
-              <img src={facebookIcon} />
-              <img src={instagramIcon} />
+              <SocialLinks />
             </div>
             <p className="website">
               <span>Website</span> by James McNamara
@@ -83,12 +84,7 @@ export class Footer extends Component {
           <hr />
           <div className='second-row'>
             <div className="social-container">
-              <a href="www.facebook.com" target="_blank">
-                <img src={facebookIcon} />
-              </a>
-              <a href="www.instagram.com" target="_blank">
-                <img src={instagramIcon} />
-              </a>
+              <SocialLinks />
             </div>
             <p className="enquiries">
               General Enquiries: <span>info@sunnysideupglobal.org</span>
