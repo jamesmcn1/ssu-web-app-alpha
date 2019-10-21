@@ -14,7 +14,7 @@ export class SocialLinks extends PureComponent {
           <img className="social-icon" src={facebookIcon} />
         </a>
         <a href="www.instagram.com" target="_blank">
-          <img className="social-icon" src={instagramIcon} />
+          <img className="social-icon instagram" src={instagramIcon} />
         </a>
       </div>
     );

@@ -60,6 +60,9 @@ export class Header extends Component {
             <p className="enquiries">
               General Enquiries: <span>info@sunnysideupglobal.org</span>
             </p>
+            <div className="social-container">
+              <SocialLinks />
+            </div>
             <hr />
             <p className="small">
               <span>Website</span> by James McNamara

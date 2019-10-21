@@ -44,7 +44,7 @@
   p {
     margin: 20px 0px;
     &.enquiries {
-      margin: 60px 0px;
+      margin: 60px 0px 20px;
       font-style: 18px;
     }
     &.small {
@@ -53,6 +53,9 @@
   }
   p, a.link {
     text-align: center;
+  }
+  .social-container {
+    margin-bottom: 60px;
   }
   span {
     color: $orange;

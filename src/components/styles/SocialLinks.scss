@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   img.social-icon {
     width: 33px;
     height: 33px;
     margin-right: 20px;
+    &.instagram {
+      margin-right: 0px;
+    }
   }
 }
