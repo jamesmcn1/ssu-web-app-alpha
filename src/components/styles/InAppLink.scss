@@ -1,0 +1,11 @@
+.in-app-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 100px;
+  p.in-app-text {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+  }
+}

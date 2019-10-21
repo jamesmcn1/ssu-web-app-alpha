@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 export class Container extends Component {
   render() {
 
+    const { footerComponent } = this.props;
+
     let classes = ['container'];
 
     if (this.props.className) {
@@ -17,10 +19,21 @@ export class Container extends Component {
       classes.push('page-title');
     }
 
+    if (!!footerComponent) {
+      classes.push('with-footer');
+    }
+
     // main container component
     const container = (
       <div className={classes.join(' ')} style={{ textAlign: this.props.textAlign || "left" }}>
         {this.props.children}
+        {
+          footerComponent && (
+            <div className="footer-component">
+              {footerComponent}
+            </div>
+          )
+        }
       </div>
     );
 
