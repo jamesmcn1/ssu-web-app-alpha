@@ -29,7 +29,7 @@ Try playing with the code on CodeSandbox :)
 
 #### Requirements
 
-- Node.js
+- Node.js (please use Node version 8.17.0 using NVM)
 - NPM
 
 ```javascript
