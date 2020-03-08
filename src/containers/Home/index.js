@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Screen from '../../components/Screen';
-import ImagePartial from '../../components/ImagePartial';
+import HomeImagePartial from './HomeImagePartial';
 import Container from '../../components/Container';
 import InAppLink from '../../components/InAppLink';
 import VideoContainer from '../../components/VideoContainer';
@@ -15,7 +15,7 @@ export class Home extends Component {
       <Screen
         className="home-screen"
       >
-        <ImagePartial
+        <HomeImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567537991/Sunny%20Side%20Up/american-public-power-association-419672-unsplash.jpg"
           opacity={0.9}
         >
@@ -30,8 +30,8 @@ export class Home extends Component {
               </Fade>
             </div>
           </Container>
-        </ImagePartial>
-        <ImagePartial
+        </HomeImagePartial>
+        <HomeImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883250/Sunny%20Side%20Up/Project%20Images/rita-PP9m6__g1Ng-unsplash.jpg"
           opacity={0.7}
         >
@@ -43,8 +43,8 @@ export class Home extends Component {
               </div>
             </Slide>
           </Container>
-        </ImagePartial>
-        <ImagePartial
+        </HomeImagePartial>
+        <HomeImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883790/Sunny%20Side%20Up/Project%20Images/homepage_photo.jpg"
           opacity={0.7}
         >
@@ -58,7 +58,7 @@ export class Home extends Component {
               </div>
             </Slide>
           </Container>
-        </ImagePartial>
+        </HomeImagePartial>
         <Container
           textAlign="center"
           className="home-stats"
@@ -100,7 +100,7 @@ export class Home extends Component {
           src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
         />
 
-        <ImagePartial
+        <HomeImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
           opacity={0.8}
         >
@@ -114,7 +114,7 @@ export class Home extends Component {
               </div>
             </Slide>
           </Container>
-        </ImagePartial>
+        </HomeImagePartial>
       </Screen>
     );
   }
