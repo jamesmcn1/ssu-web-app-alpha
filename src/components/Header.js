@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import { Dropdown, DropdownButton } from 'react-bootstrap';
+
 import SocialLinks from './SocialLinks';
 import logo from '../assets/images/logo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export class Header extends Component {
@@ -78,9 +81,11 @@ export class Header extends Component {
               <Link className="link" to="/">
                 <img src={logo} />
               </Link>
-              <Link className="link" to="/projects">
-                Projects
-              </Link>
+              <DropdownButton id="dropdown-basic-button" title="Projects">
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              </DropdownButton>
               <Link className="link" to="/events">
                 Events
               </Link>

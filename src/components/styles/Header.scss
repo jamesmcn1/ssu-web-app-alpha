@@ -63,7 +63,7 @@
 }
 
 .header-container-not-mobile {
-  overflow: hidden;
+  overflow: visible;
   z-index: 999;
   width: 100%;
   margin: 0 auto;
@@ -88,14 +88,30 @@
           flex-direction: row;
           align-items: center;
         }
+        .dropdown {
+
+        }
       }
     }
     img {
       height: 80px;
       width: 80px;
     }
-    .link {
+    .link,.dropdown  {
       margin-right: 75px;
+    }
+    .dropdown {
+      .btn-primary {
+        background-color: $transparent;
+        border-color: $transparent;
+        font-size: 25px;
+        &::after {
+          vertical-align: 0.08em;
+          border-top: 0.45em solid $orange;
+          border-right: 0.45em solid $transparent;
+          border-left: 0.45em solid $transparent;
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import Screen from '../../components/Screen';
 import ImagePartial from '../../components/ImagePartial';
 import Container from '../../components/Container';
 import InAppLink from '../../components/InAppLink';
+import VideoContainer from '../../components/VideoContainer';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
@@ -111,6 +112,9 @@ export class Home extends Component {
             </Slide>
           </Container>
         </ImagePartial>
+        <VideoContainer
+          src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
+        />
       </Screen>
     );
   }
