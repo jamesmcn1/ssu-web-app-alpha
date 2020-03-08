@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-// import ImagePartial from '../../components/ImagePartial';
+import { convertDate } from '../../services/utils/commonHelpers';
 
 export class EventCard extends Component {
   render() {
@@ -20,7 +19,7 @@ export class EventCard extends Component {
           <div className="info-content">
             <h1>{name}</h1>
             <div className="venue-and-date">
-              <h3>{date}</h3>
+              <h3>{convertDate(date)}</h3>
               <h3>{venue}</h3>
             </div>
             {

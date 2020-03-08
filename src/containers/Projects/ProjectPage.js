@@ -14,7 +14,10 @@ export class ProjectPage extends Component {
         <Container>
           <ProjectContent project={this.props.project} />
         </Container>
-        <iframe width="100%" height="450" frameborder="0" src={this.props.project.googleMapIFrameURL} allowfullscreen></iframe>
+        {
+          this.props.project.googleMapIFrameURL &&
+          <iframe width="100%" height="450" frameborder="0" src={this.props.project.googleMapIFrameURL} allowfullscreen></iframe>
+        }
       </Screen>
     );
   }
