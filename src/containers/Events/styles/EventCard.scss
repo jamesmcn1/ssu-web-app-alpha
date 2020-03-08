@@ -102,6 +102,11 @@
         right: 0;
         height: 80px;
         width: 80px;
+        svg {
+          position: relative;
+          top: 15px;
+          left: 15px;
+        }
       }
     }
     &:hover {
