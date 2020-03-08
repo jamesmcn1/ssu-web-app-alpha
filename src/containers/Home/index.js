@@ -96,9 +96,12 @@ export class Home extends Component {
             </div>
           </Fade>
         </Container>
+        <VideoContainer
+          src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
+        />
+
         <ImagePartial
           src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
-          borderTop
           opacity={0.8}
         >
           <Container
@@ -112,9 +115,6 @@ export class Home extends Component {
             </Slide>
           </Container>
         </ImagePartial>
-        <VideoContainer
-          src="https://res.cloudinary.com/nineteesvintage/video/upload/v1567971094/Sunny%20Side%20Up/Pano_aqil.mp4"
-        />
       </Screen>
     );
   }

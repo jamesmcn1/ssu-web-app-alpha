@@ -7,7 +7,7 @@ import SocialLinks from './SocialLinks';
 import logo from '../assets/images/logo.png';
 import { projects } from '../containers/Projects/ProjectsData.js';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export class Header extends Component {

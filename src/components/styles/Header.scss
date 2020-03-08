@@ -63,6 +63,8 @@
 }
 
 .header-container-not-mobile {
+  @import "~bootstrap/scss/bootstrap";
+
   overflow: visible;
   z-index: 999;
   width: 100%;
@@ -88,8 +90,10 @@
           flex-direction: row;
           align-items: center;
         }
-        .dropdown {
-
+        .link {
+          color: $white;
+          font-size: 25px;
+          text-decoration: none;
         }
       }
     }
@@ -114,9 +118,18 @@
         }
       }
       .dropdown-menu {
-        a {
+        &.active {
+          background-color: $transparent;
+        }
+        .dropdown-item:active {
+          background-color: $transparent;
+        }
+        a.link {
           color: $black;
           font-size: 18px;
+          &:hover {
+            background-color: $transparent;
+          }
         }
       }
     }

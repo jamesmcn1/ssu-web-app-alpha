@@ -81,7 +81,6 @@ export class Footer extends Component {
               </p>
             </div>
           </div>
-          <hr />
           <div className='second-row'>
             <div className="social-container">
               <SocialLinks />
