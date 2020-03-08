@@ -46,8 +46,7 @@ export class ProjectContent extends Component {
             </p>
           </div>
           <div className="extra-info">
-            <h3 className="completed">Completed: {dateCompleted}</h3>
-            <h2 className="maps">Click to see on Google maps</h2>
+            <h2 className="maps">Completed: {dateCompleted}</h2>
           </div>
         </div>
         <div className="modal-images">
