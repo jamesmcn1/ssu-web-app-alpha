@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     name: "Pano Aqui",
     mapPositionTop: 0,
     mapPositionLeft: 100,
@@ -12,6 +13,7 @@ export const projects = [
     imgUrlFour: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
   },
   {
+    id: 2,
     name: "Multan",
     mapPositionTop: 100,
     mapPositionLeft: 200,

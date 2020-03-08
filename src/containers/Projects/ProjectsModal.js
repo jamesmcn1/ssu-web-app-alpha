@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import ProjectContent from './ProjectContent';
 
 import close from "../../assets/images/close-icon.png";
 
@@ -11,8 +12,6 @@ export class ProjectsModal extends Component {
       imgIndex: 0,
     };
   }
-
-  onPressImage
 
   render() {
 
@@ -53,32 +52,7 @@ export class ProjectsModal extends Component {
           className="close"
           onClick={this.props.onRequestClose}
         />
-        <div className="project-modal-content">
-          <div className="modal-copy">
-            <div className="main-copy">
-              <h1 className="name">{name}</h1>
-              <h3 className="province">{province}</h3>
-              <p className="desc">
-                {description}
-              </p>
-            </div>
-            <div className="extra-info">
-              <h3 className="completed">Completed: {dateCompleted}</h3>
-              <h2 className="maps">Click to see on Google maps</h2>
-            </div>
-          </div>
-          <div className="modal-images">
-            <div className="main-image">
-              <div
-                className="img-bubble"
-                style={{ backgroundImage: `url(${imageArray[this.state.imgIndex]})`, backgroundColor: 'red' }}
-              />
-            </div>
-            <div className="thumbnail-container">
-              {thumbnails}
-            </div>
-          </div>
-        </div>
+        <ProjectContent project={this.props.project} />
       </Modal>
     );
   }

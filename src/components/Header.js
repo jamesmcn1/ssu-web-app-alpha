@@ -5,6 +5,8 @@ import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 import SocialLinks from './SocialLinks';
 import logo from '../assets/images/logo.png';
+import { projects } from '../containers/Projects/ProjectsData.js';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -30,6 +32,19 @@ export class Header extends Component {
     if (!!this.state.isOpen) {
       classes.push('open');
     }
+
+    const projectDropdownLinks = projects.map((x, i) => {
+      console.log('ping');
+      const link = `/projects/${x.id}`;
+      return (
+        <Dropdown.Item>
+          <Link className="link" to={link}>
+              {x.name}
+          </Link>
+        </Dropdown.Item>
+      )
+    }
+    );
 
     return (
       <div>
@@ -82,9 +97,7 @@ export class Header extends Component {
                 <img src={logo} />
               </Link>
               <DropdownButton id="dropdown-basic-button" title="Projects">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                {projectDropdownLinks}
               </DropdownButton>
               <Link className="link" to="/events">
                 Events

@@ -112,6 +112,12 @@
           border-left: 0.45em solid $transparent;
         }
       }
+      .dropdown-menu {
+        a {
+          color: $black;
+          font-size: 18px;
+        }
+      }
     }
   }
 }
