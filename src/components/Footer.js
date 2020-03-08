@@ -60,7 +60,6 @@ export class Footer extends Component {
                 Sunny Side Up!
               </h2>
               <div className="links">
-                 <p className="link">Explore</p>
                 <Link className="link" to="/projects">
                   Projects
                 </Link>
