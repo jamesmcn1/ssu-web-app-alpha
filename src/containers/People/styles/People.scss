@@ -15,7 +15,7 @@
       max-width: none;
       margin: 0;
     }
-    @media (min-width: large) {
+    @media (min-width: $large) {
       width: 475px;
       height: 475px;
     }

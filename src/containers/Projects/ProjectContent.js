@@ -54,7 +54,7 @@ export class ProjectContent extends Component {
           <div className="main-image">
             <div
               className="img-bubble"
-              style={{ backgroundImage: `url(${imageArray[this.state.imgIndex]})`, backgroundColor: 'red' }}
+              style={{ backgroundImage: `url(${imageArray[this.state.imgIndex]})`}}
             />
           </div>
           <div className="thumbnail-container">

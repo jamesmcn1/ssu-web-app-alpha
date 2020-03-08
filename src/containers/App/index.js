@@ -28,10 +28,7 @@ function getProjectPage() {
   // We can use the `useParams` hook here to access
   // the dynamic pieces of the URL.
   let { id } = useParams();
-  console.log('yo', id);
-  const project = projects.filter(x => x.id === 1)[0];
-  console.log(projects);
-  console.log(project);
+  const project = projects.filter(x => x.id.toString() === id.toString())[0];
 
   return <ProjectPage project={project} />;
 }
