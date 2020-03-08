@@ -12,7 +12,7 @@ export class Events extends Component {
     const eventCards = events.sort((a,b) => b.date - a.date).map((x, i) =>
       <EventCard
         name={x.name}
-        src={x.posterURL}
+        posterImgURL={x.posterImgURL}
         date={x.date}
         venue={x.venue}
         eventLink={x.eventLink}
