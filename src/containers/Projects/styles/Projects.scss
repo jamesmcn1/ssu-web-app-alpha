@@ -51,6 +51,10 @@
     }
   }
 
+  iframe {
+    margin-bottom: -4px;
+  }
+
   .map-widget-container {
     padding-top: 125px;
     padding-bottom: 125px;
@@ -204,7 +208,7 @@ img.close {
         @media (min-width: $large) {
           width: 475px;
           height: 475px;
-          float: right; 
+          float: right;
         }
       }
     }

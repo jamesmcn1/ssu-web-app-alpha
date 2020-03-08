@@ -11,6 +11,7 @@ export const projects = [
     imgUrlTwo: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
     imgUrlThree: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
     imgUrlFour: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567947199/Sunny%20Side%20Up/People/Samir_photo.jpg",
+    googleMapIFrameURL: "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7T-hvVeINjkRN8OrhhJLlRo&key=AIzaSyBjdnNT03YgqFITKfUwxNERTS7qetWHVMo",
   },
   {
     id: 2,
@@ -24,5 +25,6 @@ export const projects = [
     imgUrlTwo: "",
     imgUrlThree: "",
     imgUrlFour: "",
+    googleMapIFrameURL: "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2afeeFcxOzkRL9RVTscv17o&key=AIzaSyBjdnNT03YgqFITKfUwxNERTS7qetWHVMo",
   },
 ];

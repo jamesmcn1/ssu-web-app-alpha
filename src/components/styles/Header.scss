@@ -111,10 +111,13 @@
         border-color: $transparent;
         font-size: 25px;
         &::after {
-          vertical-align: 0.08em;
+          vertical-align: 0em;
           border-top: 0.45em solid $orange;
           border-right: 0.45em solid $transparent;
           border-left: 0.45em solid $transparent;
+        }
+        &:active {
+          background-color: $transparent;
         }
       }
       .dropdown-menu {
