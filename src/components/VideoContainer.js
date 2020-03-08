@@ -7,9 +7,14 @@ export class VideoContainer extends Component {
 
     this.state = {
       playing: false,
+      height: props.height
     };
 
     this.playOrPause = this.playOrPause.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState({ height: window.innerHeight + 'px' });
   }
 
   playOrPause() {
@@ -23,7 +28,8 @@ export class VideoContainer extends Component {
         <ReactPlayer
           url={this.props.src}
           width='100%'
-          height={650}
+          height={this.state.height > 650 ? '100vh' : 650 }
+          style={this.state.height > 650 ? {height: '100vh'}  : {height: 650} }
           playing={this.state.playing}
         />
       </div>
