@@ -43,8 +43,19 @@ export class Header extends Component {
           </Link>
         </Dropdown.Item>
       )
-    }
-    );
+    });
+
+    const projectMobileLinks = projects.map((x, i) => {
+      const link = `/projects/${x.id}`;
+      return (
+        <div>
+          <Link className="link project" to={link}>
+              <p>{x.name}</p>
+          </Link>
+          <hr />
+        </div>
+      )
+    });
 
     return (
       <div>
@@ -63,10 +74,9 @@ export class Header extends Component {
               Working today for a brighter & better tomorrow
             </p>
             <hr />
-            <Link className="link" to="/projects" onClick={this.closeMenu}>
-              <p>Projects</p>
-            </Link>
+            <p>Projects</p>
             <hr />
+            {projectMobileLinks}
             <Link className="link" to="/events" onClick={this.closeMenu}>
               <p>Events</p>
             </Link>

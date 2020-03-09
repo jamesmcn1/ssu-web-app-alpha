@@ -116,11 +116,11 @@ export class Home extends Component {
             textAlign="right"
             footerComponent={<InAppLink text="SEE OUR EVENTS" link="/events" />}
           >
-            <Slide right>
+            <Fade>
               <div className="partial-text right-align">
                 <h2>We fundraise with help from our charity club nights, sponsors, and private donors.</h2>
               </div>
-            </Slide>
+            </Fade>
           </Container>
         </HomeImagePartial>
       </Screen>

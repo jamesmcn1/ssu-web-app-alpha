@@ -52,7 +52,14 @@
     }
   }
   p, a.link {
+    font-size: 25px;
     text-align: center;
+    &.project {
+      p {
+        color: $orange;
+        font-size: 18px;
+      }
+    }
   }
   .social-container {
     margin-bottom: 60px;
