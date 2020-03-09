@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player'
 
+import playIcon from '../assets/images/icons8-play-96.png'
+
+
 export class VideoContainer extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +26,10 @@ export class VideoContainer extends Component {
 
   render() {
 
+    let playIconClasses = ['play-icon'];
+
+    if (!!this.state.playing) { playIconClasses.push('hide'); }
+
     return (
       <div className="container video" style={{ padding: 0, maxWidth: 'none' }} onClick={this.playOrPause}>
         <ReactPlayer
@@ -32,6 +39,7 @@ export class VideoContainer extends Component {
           style={this.state.height > 650 ? {height: '100vh'}  : {height: 650} }
           playing={this.state.playing}
         />
+        <img className={playIconClasses} src={playIcon} />
       </div>
     );
   }

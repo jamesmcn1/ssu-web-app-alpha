@@ -2,5 +2,15 @@
   &.video {
     border-top: 1px solid $orange;
     border-bottom: 1px solid $orange;
+    position: relative;
+  }
+  .play-icon {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    &.hide {
+      display: none;
+    }
   }
 }
