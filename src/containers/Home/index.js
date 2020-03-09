@@ -8,6 +8,11 @@ import VideoContainer from '../../components/VideoContainer';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
+import charityIcon from '../../assets/images/icons8-charity-100.png';
+import peopleIcon from '../../assets/images/icons8-people-100.png';
+import solarIcon from '../../assets/images/icons8-solar-panel-96.png';
+
+
 
 export class Home extends Component {
   render() {
@@ -72,6 +77,7 @@ export class Home extends Component {
               <div className="home-stat-card-container">
                 <div className="home-stat-card">
                   <div className="triangle top" />
+                  <img className="stat-icon" src={solarIcon} />
                   <div className="triangle bottom" />
                 </div>
                 <h1>75</h1>
@@ -80,6 +86,7 @@ export class Home extends Component {
               <div className="home-stat-card-container">
                 <div className="home-stat-card">
                   <div className="triangle top" />
+                  <img className="stat-icon" src={charityIcon} />
                   <div className="triangle bottom" />
                 </div>
                 <h1>&pound;5000</h1>
@@ -88,6 +95,7 @@ export class Home extends Component {
               <div className="home-stat-card-container">
                 <div className="home-stat-card">
                   <div className="triangle top" />
+                  <img className="stat-icon" src={peopleIcon} />
                   <div className="triangle bottom" />
                 </div>
                 <h1>3</h1>

@@ -122,6 +122,10 @@
               border-top: 40px solid $orange;
             }
           }
+          .stat-icon {
+            position: relative;
+            top: 20px;
+          }
         }
         p {
           margin-top: -20px;

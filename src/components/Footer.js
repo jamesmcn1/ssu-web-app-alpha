@@ -24,19 +24,6 @@ export class Footer extends Component {
               Working today for a brighter & better tomorrow
             </p>
           </div>
-          <hr />
-          <Link className="link" to="/projects">
-            Projects
-          </Link>
-          <hr />
-          <Link className="link" to="/events">
-            Events
-          </Link>
-          <hr />
-          <Link className="link" to="/people">
-            People
-          </Link>
-          <hr />
           <div className="bottom-part">
             <p className="enquiries">
               General Enquiries: <span>info@sunnysideupglobal.org</span>
@@ -60,17 +47,7 @@ export class Footer extends Component {
                 Sunny Side Up!
               </h2>
               <div className="links">
-                <Link className="link" to="/projects">
-                  Projects
-                </Link>
-                <hr />
-                <Link className="link" to="/events">
-                  Events
-                </Link>
-                <hr />
-                <Link className="link" to="/people">
-                  People
-                </Link>
+
               </div>
             </div>
             <div className="icon-container">
