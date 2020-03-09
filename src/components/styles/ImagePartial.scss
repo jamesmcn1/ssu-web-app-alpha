@@ -8,6 +8,10 @@
     height: 90vh;
     min-height: 736px;
   }
+  &.home-screen:after {
+    height: 90vh;
+    min-height: 736px;
+  }
   @supports (-webkit-overflow-scrolling: touch) {
     &.home-screen {
       background-attachment: scroll;
@@ -28,11 +32,13 @@
     right: 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100%;
     &.home-screen {
       background-attachment: fixed;
+      @media (min-width: $medium) {
+        background-size: cover;
+      }
     }
   }
 }
