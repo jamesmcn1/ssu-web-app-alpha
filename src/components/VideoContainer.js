@@ -39,7 +39,7 @@ export class VideoContainer extends Component {
           style={this.state.height > 650 ? {height: '100vh'}  : {height: 650} }
           playing={this.state.playing}
         />
-        <img className={playIconClasses} src={playIcon} />
+        <img className={playIconClasses.join(' ')} src={playIcon} />
       </div>
     );
   }
