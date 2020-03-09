@@ -41,12 +41,12 @@ export class Home extends Component {
           opacity={0.7}
         >
           <Container>
-            <Slide left>
+            <Fade>
               <div className="partial-text">
                 <h2>Approximately 1.1 billion people in the World live without access to electricity.</h2>
                 <h3>The majority of these individuals live in rural areas of our planet.</h3>
               </div>
-            </Slide>
+            </Fade>
           </Container>
         </HomeImagePartial>
         <HomeImagePartial
@@ -56,12 +56,12 @@ export class Home extends Component {
           <Container
             textAlign="right"
           >
-            <Slide right>
+            <Fade>
               <div className="partial-text right-align">
                 <h2>Our founders have lived across the World, being exposed to communities stricken with poverty.</h2>
                 <h3>After conducting research, they found that many off-grid communities have limited access to light during productive hours of their days.</h3>
               </div>
-            </Slide>
+            </Fade>
           </Container>
         </HomeImagePartial>
         <Container
