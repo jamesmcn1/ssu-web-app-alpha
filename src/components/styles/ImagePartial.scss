@@ -41,7 +41,8 @@
       }
       @media (hover: none) {
         &.home-screen {
-          background-attachment: scroll;
+          // background-attachment: scroll;
+          background-size: auto 100vh
         }
       }
     }
