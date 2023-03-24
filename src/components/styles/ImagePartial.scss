@@ -12,11 +12,11 @@
     height: 90vh;
     min-height: 736px;
   }
-  @supports (-webkit-overflow-scrolling: touch) {
-    &.home-screen {
-      background-attachment: scroll;
-    }
-  }
+  // @supports (-webkit-overflow-scrolling: touch) {
+  //   &.home-screen {
+  //     background-attachment: scroll;
+  //   }
+  // }
   &.border-top {
     border-top: 1px solid $orange;
   }
