@@ -39,7 +39,7 @@
       background-size: cover;
       @media (hover: none) {
         &.home-screen {
-          background-attachment: inherit;
+          background-attachment: scroll;
         }
       }
     }
