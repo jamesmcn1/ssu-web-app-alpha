@@ -2,7 +2,7 @@
   "name": "ssu-web-app-alpha",
   "version": "0.1.0",
   "engines": {
-    "node": "14.21.3",
+    "node": "14.21.2",
     "npm": "6.14.18"
   },
   "main": "index.js",
