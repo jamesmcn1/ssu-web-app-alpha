@@ -29,7 +29,6 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
-    "wdio": "wdio",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage",
@@ -65,11 +64,7 @@
     "prop-types": "^15.6.2",
     "react-test-renderer": "^16.6.3",
     "redux-mock-store": "^1.5.3",
-    "sinon": "^7.1.1",
-    "wdio-mocha-framework": "^0.6.4",
-    "wdio-selenium-standalone-service": "0.0.12",
-    "wdio-spec-reporter": "^0.1.5",
-    "webdriverio": "^4.14.1"
+    "sinon": "^7.1.1"
   },
   "keywords": [],
   "description": "Sunny Side Up"
