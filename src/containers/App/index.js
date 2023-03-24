@@ -16,7 +16,7 @@ const App = () => (
     <main>
       <Router>
         <Route exact path="/" component={Home} />
-        <Route path="/projects/:id" component={getProjectPage} />
+        <Route path="/projects/:id" component={GetProjectPage} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/people" component={People} />
       </Router>
@@ -24,7 +24,7 @@ const App = () => (
   </React.Fragment>
 );
 
-function getProjectPage() {
+function GetProjectPage() {
   // We can use the `useParams` hook here to access
   // the dynamic pieces of the URL.
   let { id } = useParams();
