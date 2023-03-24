@@ -20,13 +20,13 @@ export const events = [
     posterImgURL: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567634883/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/easter_sunday_ssu.jpg",
     eventLink: "https://www.facebook.com/events/166025317382752/"
   },
-  {
-    name: "SSU w/ Ernesto Harmon & Goldy Biscuit",
-    date: "2018-05-24",
-    venue: "La Cheetah Club",
-    posterImgURL: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567973978/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_may_24_large_version_copy_1_-min.pdf",
-    eventLink: "https://www.facebook.com/events/129178757940420/"
-  },
+  // {
+  //   name: "SSU w/ Ernesto Harmon & Goldy Biscuit",
+  //   date: "2018-05-24",
+  //   venue: "La Cheetah Club",
+  //   posterImgURL: "https://res.cloudinary.com/nineteesvintage/image/upload/v1567973978/Sunny%20Side%20Up/Club%20Night%20Posters/Club%20Night%20Posters/SUNNY_SIDE_UP_may_24_large_version_copy_1_-min.pdf",
+  //   eventLink: "https://www.facebook.com/events/129178757940420/"
+  // },
   {
     name: "SSU w/ Ryan Martin",
     date: "2018-07-04",
