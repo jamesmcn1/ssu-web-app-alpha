@@ -34,7 +34,7 @@ export class ProjectsModal extends Component {
       <div
         className="thumbnail-image"
         onClick={() => this.setState({ imgIndex: i })}
-        style={{ backgroundImage: `url(${x})`, backgroundColor: 'red' }}
+        style={{ backgroundImage: `url(${x})`, backgroundColor: 'white' }}
       />
     );
 
