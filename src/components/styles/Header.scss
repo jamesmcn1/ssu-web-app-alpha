@@ -10,8 +10,6 @@
   transition: right 0.2s;
   box-sizing: border-box;
   transition: left 0.2s;
-  overflow-y: scroll;
-  overflow-x: hidden;
   @media (min-width: $medium) {
     display: none;
   }
@@ -21,6 +19,8 @@
   }
   &.open {
     left: 0; // this opens the modal
+    overflow-y: scroll;
+    overflow-x: hidden;
     span.menu-icon {
       display: none;
     }
