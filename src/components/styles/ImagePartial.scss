@@ -12,7 +12,7 @@
     height: 90vh;
     min-height: 736px;
   }
-  // @supports (-webkit-overflow-scrolling: touch) {
+  // @media (hover: none) {
   //   &.home-screen {
   //     background-attachment: scroll;
   //   }
@@ -38,6 +38,11 @@
       background-attachment: fixed;
       @media (min-width: $medium) {
         background-size: cover;
+      }
+      @media (hover: none) {
+        &.home-screen {
+          background-attachment: scroll;
+        }
       }
     }
   }

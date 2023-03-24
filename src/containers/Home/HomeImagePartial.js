@@ -12,18 +12,18 @@ export class HomeImagePartial extends Component {
   }
 
   render() {
-    let classes = ['image-partial', 'home-screen'];
+    let containerClasses = ['image-partial', 'home-screen'];
     let backgroundImageClasses = ['background-img', 'home-screen'];
 
     if (!!this.props.pageTitle) {
-      classes.push('page-title');
+      containerClasses.push('page-title');
     }
     if (!!this.props.borderTop) {
-      classes.push('border-top');
+      containerClasses.push('border-top');
     }
 
     return (
-      <div className={classes.join(' ')}>
+      <div className={containerClasses.join(' ')}>
         <div className={backgroundImageClasses.join(' ')} style={this.state}></div>
         {this.props.children}
       </div>
