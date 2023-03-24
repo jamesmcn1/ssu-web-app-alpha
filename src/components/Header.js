@@ -74,6 +74,10 @@ export class Header extends Component {
               Working today for a brighter & better tomorrow
             </p>
             <hr />
+            <Link className="link" to="/" onClick={this.closeMenu}>
+              <p>Home</p>
+            </Link>
+            <hr />
             <p>Projects</p>
             <hr />
             {projectMobileLinks}
