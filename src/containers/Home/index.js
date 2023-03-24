@@ -44,7 +44,7 @@ export class Home extends Component {
           <Container>
             <Fade>
               <div className="partial-text">
-                <h2>Approximately 1.1 billion people in the World live without access to electricity.</h2>
+                <h2>Approximately 1.1 billion people in the world live without access to electricity.</h2>
                 <h3>The majority of these individuals live in rural areas of our planet.</h3>
               </div>
             </Fade>
@@ -59,7 +59,7 @@ export class Home extends Component {
           >
             <Fade>
               <div className="partial-text right-align">
-                <h2>Our founders have lived across the World, being exposed to communities stricken with poverty.</h2>
+                <h2>Our founders have lived across the world, being exposed to communities stricken with poverty.</h2>
                 <h3>After conducting research, they found that many off-grid communities have limited access to light during productive hours of their days.</h3>
               </div>
             </Fade>
@@ -68,7 +68,7 @@ export class Home extends Component {
         <Container
           textAlign="center"
           className="home-stats"
-          footerComponent={<InAppLink text="SEE OUR PROJECTS" link="/projects" />}
+          footerComponent={<InAppLink text="SEE OUR PROJECTS" link="/projects/1" />}
           divider
         >
           <Fade>
@@ -119,7 +119,7 @@ export class Home extends Component {
           >
             <Fade>
               <div className="partial-text right-align">
-                <h2>We fundraise with help from our charity club nights, sponsors, and private donors.</h2>
+                <h2>We fundraise with help from our charity club nights, sponsors and private donors.</h2>
               </div>
             </Fade>
           </Container>

@@ -20,7 +20,7 @@ export const people = [
   {
     name: "James McNamara",
     title: "Web Developer",
-    description: "Based in Glasgow & London, James is our head honcho when it comes to website design and development. Also a great DJ he occasionally plays at our club events.",
-    imgUrl: ""
+    description: "Based in Glasgow & London, James is our head honcho when it comes to website design and development. Also a great DJ, he occasionally plays at our club events.",
+    imgUrl: "https://res.cloudinary.com/nineteesvintage/image/upload/e_grayscale/v1679654334/Sunny%20Side%20Up/People/Screen_Shot_2023-03-24_at_10.38.34_AM.png"
   }
 ];
