@@ -6,6 +6,8 @@
     .play-icon {
       pointer-events: none;
       position: absolute;
+      top: 48%; // fallback
+      left: 48%; // fallback
       top: calc(50% - 35px);
       left: calc(50% - 35px);
       &.hide {

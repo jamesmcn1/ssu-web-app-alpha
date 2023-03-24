@@ -37,9 +37,6 @@
     &.home-screen {
       background-attachment: fixed;
       background-size: cover;
-      // @media (min-width: $medium) {
-      //   background-size: cover;
-      // }
       @media (hover: none) {
         &.home-screen {
           background-attachment: inherit;
