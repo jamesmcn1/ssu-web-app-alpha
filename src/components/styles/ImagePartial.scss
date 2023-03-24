@@ -41,8 +41,7 @@
       }
       @media (hover: none) {
         &.home-screen {
-          // background-attachment: scroll;
-          background-size: auto 100vh
+          background-attachment: inherit;
         }
       }
     }
