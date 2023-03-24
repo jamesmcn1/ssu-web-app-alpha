@@ -39,8 +39,9 @@ export class VideoContainer extends Component {
           style={this.state.height > 650 ? {height: '100vh'}  : {height: 650} }
           playing={this.state.playing}
           playIcon={<img className={playIconClasses.join(' ')} src={playIcon} />}
+          light="../assets/images/icons8-play-96.png"
         />
-        <img className={playIconClasses.join(' ')} src={playIcon} />
+        {/* <img className={playIconClasses.join(' ')} src={playIcon} /> */}
       </div>
     );
   }
