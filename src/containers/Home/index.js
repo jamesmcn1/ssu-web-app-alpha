@@ -14,6 +14,7 @@ import solarIcon from '../../assets/images/icons8-solar-panel-96.png';
 
 
 
+// eslint-disable-next-line react/prefer-stateless-function
 export class Home extends Component {
   render() {
     return (
@@ -21,7 +22,7 @@ export class Home extends Component {
         className="home-screen"
       >
         <HomeImagePartial
-          src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567537991/Sunny%20Side%20Up/american-public-power-association-419672-unsplash.jpg"
+          src="https://res.cloudinary.com/nineteesvintage/image/upload/q_auto,f_auto/v1567537991/Sunny%20Side%20Up/american-public-power-association-419672-unsplash.jpg"
           opacity={0.9}
         >
           <Container
@@ -37,7 +38,7 @@ export class Home extends Component {
           </Container>
         </HomeImagePartial>
         <HomeImagePartial
-          src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883250/Sunny%20Side%20Up/Project%20Images/rita-PP9m6__g1Ng-unsplash.jpg"
+          src="https://res.cloudinary.com/nineteesvintage/image/upload/q_auto,f_auto/v1567883250/Sunny%20Side%20Up/Project%20Images/rita-PP9m6__g1Ng-unsplash.jpg"
           opacity={0.7}
         >
           <Container>
@@ -50,7 +51,7 @@ export class Home extends Component {
           </Container>
         </HomeImagePartial>
         <HomeImagePartial
-          src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883790/Sunny%20Side%20Up/Project%20Images/homepage_photo.jpg"
+          src="https://res.cloudinary.com/nineteesvintage/image/upload/q_auto,f_auto/v1567883790/Sunny%20Side%20Up/Project%20Images/homepage_photo.jpg"
           opacity={0.7}
         >
           <Container
@@ -109,7 +110,7 @@ export class Home extends Component {
         />
 
         <HomeImagePartial
-          src="https://res.cloudinary.com/nineteesvintage/image/upload/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
+          src="https://res.cloudinary.com/nineteesvintage/image/upload/q_auto,f_auto/v1567883201/Sunny%20Side%20Up/Project%20Images/lyla.jpg"
           opacity={0.8}
         >
           <Container
