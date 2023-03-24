@@ -36,9 +36,10 @@
     height: 100%;
     &.home-screen {
       background-attachment: fixed;
-      @media (min-width: $medium) {
-        background-size: cover;
-      }
+      background-size: cover;
+      // @media (min-width: $medium) {
+      //   background-size: cover;
+      // }
       @media (hover: none) {
         &.home-screen {
           background-attachment: inherit;
