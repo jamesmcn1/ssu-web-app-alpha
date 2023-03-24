@@ -16,6 +16,7 @@ export const projects = [
   {
     id: 2,
     name: "Multan",
+    comingSoon: true,
     mapPositionTop: 100,
     mapPositionLeft: 200,
     province: "",
