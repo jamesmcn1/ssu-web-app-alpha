@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
 export class ProjectContent extends Component {
   constructor(props) {
@@ -40,29 +41,35 @@ export class ProjectContent extends Component {
       <div className="project-modal-content">
         <div className="modal-copy">
           <div className="main-copy">
-            <h1 className="name">{name}</h1>
-            <h3 className="province">{province}</h3>
-            <p className="desc">
-              {description}
-            </p>
+            <Fade>
+              <h1 className="name">{name}</h1>
+              <h3 className="province">{province}</h3>
+              <p className="desc">
+                {description}
+              </p>
+            </Fade>
           </div>
           <div className="extra-info">
-            <h2 className="maps">{completedDate}</h2>
+            <Fade>
+              <h2 className="maps">{completedDate}</h2>
+            </Fade>
           </div>
         </div>
         {
           !comingSoon && (
-            <div className="modal-images">
-              <div className="main-image">
-                <div
-                  className="img-bubble"
-                  style={{ backgroundImage: `url(${imageArray[this.state.imgIndex]})`}}
-                />
+            <Fade>
+              <div className="modal-images">
+                <div className="main-image">
+                  <div
+                    className="img-bubble"
+                    style={{ backgroundImage: `url(${imageArray[this.state.imgIndex]})`}}
+                  />
+                </div>
+                <div className="thumbnail-container">
+                  {thumbnails}
+                </div>
               </div>
-              <div className="thumbnail-container">
-                {thumbnails}
-              </div>
-            </div>
+            </Fade>
           )
         }
       </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
 import Container from '../../components/Container';
 
@@ -26,11 +27,13 @@ export class PeopleWidget extends Component {
     return (
       <Container flexDirection="row" divider>
         <div className="people-widget-content">
-          <h1 className="name">{people[this.state.index].name}</h1>
-          <h3 className="title">{people[this.state.index].title}</h3>
-          <p className="description">
-            {people[this.state.index].description}
-          </p>
+          <Fade>
+            <h1 className="name">{people[this.state.index].name}</h1>
+            <h3 className="title">{people[this.state.index].title}</h3>
+            <p className="description">
+              {people[this.state.index].description}
+            </p>
+          </Fade>
           <div className="thumbnail-container not-mobile">
             {thumbnails}
           </div>

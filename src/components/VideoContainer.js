@@ -41,7 +41,6 @@ export class VideoContainer extends Component {
           playIcon={<img className={playIconClasses.join(' ')} src={playIcon} />}
           light="../assets/images/icons8-play-96.png"
         />
-        {/* <img className={playIconClasses.join(' ')} src={playIcon} /> */}
       </div>
     );
   }
